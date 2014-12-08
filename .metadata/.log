@@ -983,3 +983,327 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
   Class:     org.testng.remote.RemoteTestNG
   Args:      -serport 3294 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse-946223733\testng-customsuite.xml
 java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:D:\training Java\Code\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar org.testng.remote.RemoteTestNG -serport 3294 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse-946223733\testng-customsuite.xml
+!SESSION 2014-12-08 14:13:31.341 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-12-08 14:16:29.674
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2014-12-08 14:16:30.734
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-12-08 14:16:43.824
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-12-08 14:16:43.824
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 15:59:53.831
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 15:59:54.252
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar D:\training Java\Code\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 2206 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse--1263557308\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:D:\training Java\Code\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar org.testng.remote.RemoteTestNG -serport 2206 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse--1263557308\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 16:05:51.730
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 16:05:51.790
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar D:\training Java\Code\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 2247 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse--1751946513\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:D:\training Java\Code\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar org.testng.remote.RemoteTestNG -serport 2247 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse--1751946513\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 16:06:42.988
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 16:06:43.038
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar D:\training Java\Code\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 2272 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse--1527345100\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:D:\training Java\Code\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar org.testng.remote.RemoteTestNG -serport 2272 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse--1527345100\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 16:58:46.356
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 16:58:46.401
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar D:\training Java\Code\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 2479 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse--1889748513\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:D:\training Java\Code\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar org.testng.remote.RemoteTestNG -serport 2479 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse--1889748513\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 17:02:02.693
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 17:02:47.524
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 17:02:47.548
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar D:\training Java\Code\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 2511 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse-1704143346\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:D:\training Java\Code\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar org.testng.remote.RemoteTestNG -serport 2511 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse-1704143346\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 17:03:43.724
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 17:03:43.783
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar D:\training Java\Code\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 2539 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse-418974750\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:D:\training Java\Code\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar org.testng.remote.RemoteTestNG -serport 2539 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse-418974750\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 17:15:41.959
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 17:15:49.061
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar D:\training Java\Code\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 2683 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse-2020537757\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:D:\training Java\Code\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar org.testng.remote.RemoteTestNG -serport 2683 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse-2020537757\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 17:44:23.890
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  import java.util.regex.Pattern
+  import org.testng.annotations.Test#2
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 17:47:02.440
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  import java.util.regex.Pattern
+  import org.testng.annotations.Test#2
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 17:47:02.463
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar D:\training Java\Code\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 2834 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse-2121408723\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:D:\training Java\Code\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar org.testng.remote.RemoteTestNG -serport 2834 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse-2121408723\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 17:50:37.640
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  import java.util.regex.Pattern
+  import org.testng.annotations.Test#2
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 17:50:37.687
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar D:\training Java\Code\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 3045 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse-1695212566\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:D:\training Java\Code\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar org.testng.remote.RemoteTestNG -serport 3045 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse-1695212566\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 17:51:14.776
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  import java.util.regex.Pattern
+  import org.testng.annotations.Test#2
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 17:51:14.823
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar D:\training Java\Code\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 3109 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse--961832689\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:D:\training Java\Code\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar org.testng.remote.RemoteTestNG -serport 3109 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse--961832689\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 17:57:24.813
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  import java.util.regex.Pattern
+  import org.testng.annotations.Test#2
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 17:57:24.857
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar D:\training Java\Code\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 3391 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse--2033989956\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:D:\training Java\Code\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar org.testng.remote.RemoteTestNG -serport 3391 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse--2033989956\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 17:57:58.020
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook]]
+  [Working copy] GroupCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] BaseForTests.java
+    package com.example.tests
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.BeforeTest
+    class BaseForTests
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void setUp()
+      void tearDown()
+      void openMainPage()
+      void initContactCreation()
+      void fillContactForm(ContactData)
+      void submitContactCreation()
+      void returnToMainPageFromContact()
+      void gotoGroupPage()
+      void initGroupCreation()
+      void fillGroupForm(GroupData)
+      void submitGroupCreation()
+      void returnToGroupsPage()
+      boolean isElementPresent(By)
+      boolean isAlertPresent()
+      String closeAlertAndGetItsText()
+  [Working copy] GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+  [Working copy] ContactCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    import java.util.regex.Pattern
+    import org.testng.annotations.Test#2
+    class ContactCreationTests
+      void testNonEmptyContactCreation()
+      void testEmptyContactCreation()
+  [Working copy] ContactData.java
+    package com.example.tests
+    class ContactData
+      String firstname
+      String lastname
+      String address
+      String telHome
+      String telMobile
+      String telWork
+      String email1
+      String email2
+      String birthDay
+      String birthMonth
+      String birthYear
+      String relatedGroup
+      String adressSecondary
+      String telSecondary
+      ContactData()
+
+!ENTRY org.testng.eclipse 1 0 2014-12-08 17:57:58.067
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar D:\training Java\Code\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 3561 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse-1258953286\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:D:\training Java\Code\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar org.testng.remote.RemoteTestNG -serport 3561 -d D:\training Java\Code\dev_java_test\addressbook\test-output C:\Users\user\AppData\Local\Temp\testng-eclipse-1258953286\testng-customsuite.xml

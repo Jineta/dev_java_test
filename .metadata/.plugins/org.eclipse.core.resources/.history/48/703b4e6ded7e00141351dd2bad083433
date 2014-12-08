@@ -1,0 +1,18 @@
+package com.example.tests;
+
+import java.util.regex.Pattern;
+
+import org.testng.annotations.Test;
+
+
+public class ContactCreationTests  extends BaseForTests {
+  @Test
+  public void testNonEmptyContactCreation() throws Exception {
+	openMainPage();
+
+	initContactCreation();
+    fillContactForm(new ContactData("Inna", "Domanchuk", "adress", "tel home", "tel mob", "tel work", "jineta@ukr.net", "jineta2@ukr.net", "30", "May", "1985", "group111", "adress secondary", "home"));
+    submitContactCreation();
+    returnToMainPageFromContact();
+  }
+}

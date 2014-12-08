@@ -1,0 +1,39 @@
+package com.example.tests;
+
+public class ContactData {
+	public String firstname;
+	public String lastname;
+	public String address;
+	public String telHome;
+	public String telMobile;
+	public String telWork;
+	public String email1;
+	public String email2;
+	public String birthDay;
+	public String birthMonth;
+	public String birthYear;
+	public String relatedGroup;
+	public String adressSecondary;
+	public String telSecondary;
+
+	public ContactData(String firstname, String lastname, String address,
+			String telHome, String telMobile, String telWork, String email1,
+			String email2, String birthDay, String birthMonth,
+			String birthYear, String relatedGroup, String adressSecondary,
+			String telSecondary) {
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.address = address;
+		this.telHome = telHome;
+		this.telMobile = telMobile;
+		this.telWork = telWork;
+		this.email1 = email1;
+		this.email2 = email2;
+		this.birthDay = birthDay;
+		this.birthMonth = birthMonth;
+		this.birthYear = birthYear;
+		this.relatedGroup = relatedGroup;
+		this.adressSecondary = adressSecondary;
+		this.telSecondary = telSecondary;
+	}
+}

@@ -1,0 +1,79 @@
+package com.example.tests;
+
+import java.util.regex.Pattern;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//import org.junit.*;
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+public class ContactCreationTests  extends BaseForTests {
+  @Test
+  public void testUntitled() throws Exception {
+	openMainPage();
+	goToNewContactPage();
+	initContactCreation();
+    fillContactForm(new FillContactFormParameter("Inna", "Domanchuk", "adress", "tel home", "tel mob", "tel work", "jineta@ukr.net", "jineta2@ukr.net", "30", "May", "1985",
+			"group111", "adress secondary", "home"));
+    submitContactCreation();
+    driver.findElement(By.linkText("home")).click();
+  }
+
+private void submitContactCreation() {
+	driver.findElement(By.name("submit")).click();
+}
+
+private void fillContactForm(FillContactFormParameter parameterObject) {
+	driver.findElement(By.name("firstname")).clear();
+    driver.findElement(By.name("firstname")).sendKeys(parameterObject.firstname);
+    driver.findElement(By.name("lastname")).clear();
+    driver.findElement(By.name("lastname")).sendKeys(parameterObject.lastname);
+    driver.findElement(By.name("address")).clear();
+    driver.findElement(By.name("address")).sendKeys(parameterObject.address);
+    driver.findElement(By.name("home")).clear();
+    driver.findElement(By.name("home")).sendKeys(parameterObject.telHome);
+    driver.findElement(By.name("mobile")).clear();
+    driver.findElement(By.name("mobile")).sendKeys(parameterObject.telMobile);
+    driver.findElement(By.name("work")).clear();
+    driver.findElement(By.name("work")).sendKeys(parameterObject.telWork);
+    driver.findElement(By.name("email")).clear();
+    driver.findElement(By.name("email")).sendKeys(parameterObject.email1);
+    driver.findElement(By.name("email2")).clear();
+    driver.findElement(By.name("email2")).sendKeys(parameterObject.email2);
+    new Select(driver.findElement(By.name("bday"))).selectByVisibleText(parameterObject.birthDay);
+    new Select(driver.findElement(By.name("bmonth"))).selectByVisibleText(parameterObject.birthMonth);
+    driver.findElement(By.name("byear")).clear();
+    driver.findElement(By.name("byear")).sendKeys(parameterObject.birthYear);
+    new Select(driver.findElement(By.name("new_group"))).selectByVisibleText(parameterObject.relatedGroup);
+    driver.findElement(By.name("address2")).clear();
+    driver.findElement(By.name("address2")).sendKeys(parameterObject.adressSecondary);
+    driver.findElement(By.name("phone2")).clear();
+    driver.findElement(By.name("phone2")).sendKeys(parameterObject.telSecondary);
+}
+public void goToNewContactPage() {
+	driver.findElement(By.linkText("edit")).click();
+}
+
+private void  initContactCreation() {
+    driver.findElement(By.linkText("add new")).click();
+}
+}
