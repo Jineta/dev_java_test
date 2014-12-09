@@ -13,20 +13,20 @@ public class ContactCreationTests  extends BaseForTests {
 
 	initContactCreation();
 	ContactData contact = new ContactData();
-	contact.setFirstname("Inna");
-	contact.setLastname("Domanchuk");
-	contact.setAddress("address");
-	contact.setTelHome("tel home");
-	contact.setTelMobile("tel mob");
-	contact.setTelWork("tel work");
-	contact.setEmail1("jineta@ukr.net");
-	contact.setEmail2("jineta2@ukr.net");
-	contact.setBirthDay("30");
-	contact.setBirthMonth("May");
-	contact.setBirthYear("1985");
-	contact.setRelatedGroup("group111");
-	contact.setAdressSecondary("address secondary");
-	contact.setTelSecondary("home");
+	contact.firstname ="Inna";
+	contact.lastname= "Domanchuk";
+	contact.address="address";
+	contact.telHome="tel home";
+	contact.telMobile="tel mob";
+	contact.telWork="tel work";
+	contact.email1="jineta@ukr.net";
+	contact.email2="jineta2@ukr.net";
+	contact.birthDay="30";
+	contact.birthMonth="May";
+	contact.birthYear="1985";
+	contact.relatedGroup = "group111";
+	contact.adressSecondary="address secondary";
+	contact.telSecondary="home";
 	
 	fillContactForm(contact);
     submitContactCreation();
@@ -35,6 +35,7 @@ public class ContactCreationTests  extends BaseForTests {
   @Test
   public void testEmptyContactCreation() throws Exception {
 	openMainPage();
+
 	initContactCreation();
 	ContactData contact = new ContactData();	
 	fillContactForm(contact);

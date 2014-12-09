@@ -66,14 +66,9 @@ public class ContactData {
 	public void setBirthYear(String pBirthYear){
 		birthYear= pBirthYear;	
 		}
-	public void setRelatedGroup(String pRelatedGroup){
-		relatedGroup= pRelatedGroup;	
-		}
-	public void setAdressSecondary(String pAdressSecondary){
-		adressSecondary= pAdressSecondary;	
-		}
-	public void setTelSecondary(String pTelSecondary){
-		telSecondary= pTelSecondary;	
-		}
+
+	relatedGroup="";
+	adressSecondary="";
+	telSecondary="";	
 	
 }

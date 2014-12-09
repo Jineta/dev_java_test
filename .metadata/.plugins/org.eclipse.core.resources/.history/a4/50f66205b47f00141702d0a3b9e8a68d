@@ -51,29 +51,4 @@ public class ContactData {
 	public void setTelWork(String pTelWork){
 		telWork= pTelWork;	
 		}
-	public void setEmail1(String pEmail1){
-		email1= pEmail1;	
-		}
-	public void setEmail2(String pEmail2){
-		email1= pEmail2;	
-		}
-	public void setBirthDay(String pBirthDay){
-		birthDay= pBirthDay;	
-		}
-	public void setBirthMonth(String pBirthMonth){
-		birthMonth= pBirthMonth;	
-		}
-	public void setBirthYear(String pBirthYear){
-		birthYear= pBirthYear;	
-		}
-	public void setRelatedGroup(String pRelatedGroup){
-		relatedGroup= pRelatedGroup;	
-		}
-	public void setAdressSecondary(String pAdressSecondary){
-		adressSecondary= pAdressSecondary;	
-		}
-	public void setTelSecondary(String pTelSecondary){
-		telSecondary= pTelSecondary;	
-		}
-	
 }

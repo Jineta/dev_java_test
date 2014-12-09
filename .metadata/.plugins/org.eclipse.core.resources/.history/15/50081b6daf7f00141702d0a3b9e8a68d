@@ -9,11 +9,11 @@ public class GroupCreationTests extends BaseForTests {
     openMainPage();
     gotoGroupPage();
     initGroupCreation();
-  
-    GroupData group = new GroupData();
-    group.setName("group111");
-    group.setHeader("header111");
-    group.setFooter("footer111");
+    
+    GroupData group = new GroupData();//local var, is viewable only in this method
+    group.name = "group111";
+    group.header = "header111";
+    group.footer = "footer111";
     
     fillGroupForm(group);
     submitGroupCreation();
@@ -24,9 +24,11 @@ public class GroupCreationTests extends BaseForTests {
   public void testEmptyGroupCreation() throws Exception {
     openMainPage();
     gotoGroupPage();
-    initGroupCreation();    
-    GroupData group = new GroupData();
-    fillGroupForm(group);    
+    initGroupCreation();
+    
+    GroupData group = new GroupData();//local var, is viewable only in this method
+    fillGroupForm(group);
+    
     submitGroupCreation();
     returnToGroupsPage();
   }

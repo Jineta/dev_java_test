@@ -11,7 +11,7 @@ public class GroupData {
 		 footer = "";
 	}
 
-//SET methods
+//methods for SET	
 public void setName(String pname){
 	name= pname;	
 	}
