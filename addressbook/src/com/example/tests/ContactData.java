@@ -1,5 +1,8 @@
 package com.example.tests;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Select;
+
 public class ContactData {
 	public String firstname;
 	public String lastname;
@@ -75,5 +78,6 @@ public class ContactData {
 	public void setTelSecondary(String pTelSecondary){
 		telSecondary= pTelSecondary;	
 		}
+	
 	
 }

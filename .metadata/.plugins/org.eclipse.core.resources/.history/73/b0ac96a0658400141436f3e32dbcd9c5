@@ -1,0 +1,28 @@
+package com.example.fw;
+
+import org.openqa.selenium.By;
+
+import com.example.tests.GroupData;
+
+public class GroupHelper {
+
+	
+	public void initGroupCreation() {
+		ApplicationManager.driver.findElement(By.name("new")).click();
+	}
+	
+	public void fillGroupForm(ApplicationManager applicationManager, GroupData group) {
+		ApplicationManager.driver.findElement(By.name("group_name")).clear();
+	    ApplicationManager.driver.findElement(By.name("group_name")).sendKeys(group.name);
+	    ApplicationManager.driver.findElement(By.name("group_header")).clear();
+	    ApplicationManager.driver.findElement(By.name("group_header")).sendKeys(group.header);
+	    ApplicationManager.driver.findElement(By.name("group_footer")).clear();
+	    ApplicationManager.driver.findElement(By.name("group_footer")).sendKeys(group.footer);   
+	}
+	public void submitGroupCreation() {
+		ApplicationManager.driver.findElement(By.name("submit")).click();
+	}
+
+
+
+}

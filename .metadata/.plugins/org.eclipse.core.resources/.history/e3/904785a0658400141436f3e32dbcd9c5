@@ -1,0 +1,93 @@
+package com.example.fw;
+
+
+import static org.junit.Assert.fail;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import com.example.tests.BaseForTests;
+import com.example.tests.GroupData;
+import com.example.tests.ContactData;
+//
+public class ApplicationManager {
+	
+   public static WebDriver driver;
+   public static String baseUrl;
+   public static boolean acceptNextAlert = true;
+   private static StringBuffer verificationErrors = new StringBuffer();
+   
+   public NavigationHelper navigationHelper;	
+   public GroupHelper groupHelper;
+   public ContactHelper contactHelper;
+   
+   public ApplicationManager () {
+	 driver = new FirefoxDriver();
+	 baseUrl = "http://localhost:8081";
+	 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+ }
+ 
+	public void stop() {
+		driver.quit();
+	    String verificationErrorString = verificationErrors.toString();
+	    if (!"".equals(verificationErrorString)) {
+	      fail(verificationErrorString);
+	    }
+	}
+	    
+	/**
+	 * @deprecated Use {@link com.example.fw.ContactHelper#fillContactForm(com.example.fw.ApplicationManager,ContactData)} instead
+	 */
+	/*public void fillContactForm(ContactData contact) {
+		contactHelper.fillContactForm(this, contact);
+	}*/
+	
+	/**
+	 * @deprecated Use {@link com.example.fw.GroupHelper#fillGroupForm(com.example.fw.ApplicationManager,GroupData)} instead
+	 */
+	/*public void fillGroupForm(GroupData group) {
+		groupHelper.fillGroupForm(this, group);
+	}*/
+	public boolean isElementPresent(By by) {
+	    try {
+	      driver.findElement(by);
+	      return true;
+	    } catch (NoSuchElementException e) {
+	      return false;
+	    }
+	  }
+
+	public boolean isAlertPresent() {
+	    try {
+	      driver.switchTo().alert();
+	      return true;
+	    } catch (NoAlertPresentException e) {
+	      return false;
+	    }
+	  }
+
+	public String closeAlertAndGetItsText() {
+	    try {
+	      Alert alert = driver.switchTo().alert();
+	      String alertText = alert.getText();
+	      if (acceptNextAlert) {
+	        alert.accept();
+	      } else {
+	        alert.dismiss();
+	      }
+	      return alertText;
+	    } finally {
+	     acceptNextAlert = true;
+	    }
+	  }
+
+		
+	}
+
+

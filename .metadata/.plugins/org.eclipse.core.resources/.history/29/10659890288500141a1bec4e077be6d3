@@ -1,0 +1,48 @@
+package com.example.fw;
+
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class ApplicationManager {
+	
+   public WebDriver driver;
+   public String baseUrl;
+   
+   public NavigationHelper navigationHelper;	
+   public GroupHelper groupHelper;
+   public ContactHelper contactHelper;
+   
+   public ApplicationManager () {
+	 driver = new FirefoxDriver();
+	 baseUrl = "http://localhost:8081";
+	 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	 navigationHelper = new NavigationHelper(this); //this?
+	 groupHelper = new GroupHelper(this);
+	 contactHelper = new ContactHelper(this);
+   }
+ 
+	public void stop() {
+		driver.quit();
+	   
+	}
+	    
+	/**
+	 * @deprecated Use {@link com.example.fw.ContactHelper#fillContactForm(com.example.fw.ApplicationManager,ContactData)} instead
+	 */
+	/*public void fillContactForm(ContactData contact) {
+		contactHelper.fillContactForm(this, contact);
+	}*/
+	
+	/**
+	 * @deprecated Use {@link com.example.fw.GroupHelper#fillGroupForm(com.example.fw.ApplicationManager,GroupData)} instead
+	 */
+	/*public void fillGroupForm(GroupData group) {
+		groupHelper.fillGroupForm(this, group);
+	}*/
+
+
+		
+	}
+
+
