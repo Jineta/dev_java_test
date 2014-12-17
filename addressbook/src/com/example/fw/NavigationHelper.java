@@ -5,16 +5,15 @@ import org.openqa.selenium.By;
 public class NavigationHelper extends HelperBase {
 
 	public NavigationHelper(ApplicationManager pManager) {
-		super(pManager); //обращение к базовому классу
-	
+		super(pManager); //обращение к базовому классу	
 	}
 
 	public void gotoGroupPage() {
-		driver.findElement(By.linkText("groups")).click();
-		}
+		click(By.name("groups"));	
+	}
 
 	public void returnToMainPageFromContact() {
-		driver.findElement(By.linkText("home page")).click();
+		click(By.name("home page"));
 	}
 
 	public void openMainPage() {
@@ -22,7 +21,6 @@ public class NavigationHelper extends HelperBase {
 	}
 
 	public void returnToGroupsPage() {
-		manager.driver.findElement(By.linkText("group page")).click();
+		click(By.name("group page"));
 	}
-
 }

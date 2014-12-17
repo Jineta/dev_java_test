@@ -8,9 +8,9 @@ import com.example.fw.ApplicationManager;
 public class ContactCreationTests  extends BaseForTests {
   @Test
   public void testNonEmptyContactCreation() throws Exception {
-	app.navigationHelper.openMainPage();
+	app.getNavigationHelper().openMainPage();
 
-	app.contactHelper.initContactCreation();
+	app.getContactHelper().initContactCreation();
 	ContactData contact = new ContactData();
 	contact.setFirstname("Inna");
 	contact.setLastname("Domanchuk");
@@ -27,17 +27,17 @@ public class ContactCreationTests  extends BaseForTests {
 	contact.setAdressSecondary("address secondary");
 	contact.setTelSecondary("home");
 	
-	app.contactHelper.fillContactForm(contact);
-    app.contactHelper.submitContactCreation();
-    app.navigationHelper.returnToMainPageFromContact();
+	app.getContactHelper().fillContactForm(contact);
+    app.getContactHelper().submitContactCreation();
+    app.getNavigationHelper().returnToMainPageFromContact();
   }
   @Test
   public void testEmptyContactCreation() throws Exception {
-	app.navigationHelper.openMainPage();
-	app.contactHelper.initContactCreation();
+	app.getNavigationHelper().openMainPage();
+	app.getContactHelper().initContactCreation();
 	ContactData contact = new ContactData();	
-	app.contactHelper.fillContactForm(contact);
-    app.contactHelper.submitContactCreation();
-    app.navigationHelper.returnToMainPageFromContact();
+	app.getContactHelper().fillContactForm(contact);
+    app.getContactHelper().submitContactCreation();
+    app.getNavigationHelper().returnToMainPageFromContact();
   }
 }

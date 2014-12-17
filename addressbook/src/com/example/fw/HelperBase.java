@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public abstract class HelperBase {// not for creation objects. only for storage common code
 
@@ -16,9 +17,9 @@ public abstract class HelperBase {// not for creation objects. only for storage 
 		
 		this.manager = pManager;//data inside object. ссілка на поле. речь идет о манагере, кот часть єтого обїекта, поле єтого обїекта
 	    this.driver = manager.driver;
-		 
-	// m parametr
 		}
+	
+	
 	public boolean isElementPresent(By by) {
 	    try {
 	      driver.findElement(by);
@@ -51,5 +52,21 @@ public abstract class HelperBase {// not for creation objects. only for storage 
 	     acceptNextAlert = true;
 	    }
 	  }
+
+
+	protected void type(By locator, String text) {
+		driver.findElement(locator).clear();
+		driver.findElement(locator).sendKeys(text);
+	}
+
+
+	protected void click(By locator) {
+		driver.findElement(locator).click();
+	}
+
+
+	protected void selectByText(By locator, String text) {
+		new Select(driver.findElement(locator)).selectByVisibleText(text);
+	}
 	}
 

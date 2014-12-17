@@ -20,6 +20,6 @@ public void setHeader(String pheader){
 	}
 public void setFooter(String pfooter){
 	footer = pfooter;	
-	}
+    }
 }
 
