@@ -26,21 +26,21 @@ public class ApplicationManager {
 	
 	public NavigationHelper getNavigationHelper() {
 		if (navigationHelper == null) {
-			navigationHelper = new NavigationHelper(this); 
+			navigationHelper = new NavigationHelper(this); //this?
 		}
 		return navigationHelper;
 	}
 	
 	public GroupHelper getGroupHelper() {
 			if (groupHelper == null) {
-				groupHelper = new GroupHelper(this); 
+				groupHelper = new GroupHelper(this); //this?
 			}
 		return groupHelper;
 	}
 	
 	public ContactHelper getContactHelper() {
 		if (contactHelper == null) {
-			contactHelper = new ContactHelper(this); 
+			contactHelper = new ContactHelper(this); //this?
 		}
 	return contactHelper;
 }

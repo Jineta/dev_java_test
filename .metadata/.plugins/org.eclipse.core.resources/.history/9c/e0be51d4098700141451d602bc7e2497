@@ -11,7 +11,6 @@ public class ContactCreationTests  extends BaseForTests {
 	app.getNavigationHelper().openMainPage();
 
 	app.getContactHelper().initContactCreation();
-	
 	ContactData contact = new ContactData();
 	contact.setFirstname("Inna");
 	contact.setLastname("Domanchuk");
@@ -27,6 +26,7 @@ public class ContactCreationTests  extends BaseForTests {
 	contact.setRelatedGroup("group111");
 	contact.setAdressSecondary("address secondary");
 	contact.setTelSecondary("home");
+	
 	app.getContactHelper().fillContactForm(contact);
     app.getContactHelper().submitContactCreation();
     app.getNavigationHelper().returnToMainPageFromContact();

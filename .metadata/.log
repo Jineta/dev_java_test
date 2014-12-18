@@ -2308,3 +2308,78 @@ java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.t
   Class:     org.testng.remote.RemoteTestNG
   Args:      -serport 16663 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-273762709\testng-customsuite.xml
 java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar org.testng.remote.RemoteTestNG -serport 16663 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-273762709\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-12-19 00:39:51.630
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactRemovalTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactRemovalTests
+    void deleteSomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2014-12-19 00:39:52.739
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 17872 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-348649927\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar org.testng.remote.RemoteTestNG -serport 17872 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-348649927\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-12-19 00:41:54.941
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactRemovalTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactRemovalTests
+    void deleteSomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2014-12-19 00:41:57.252
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 17902 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1699035149\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar org.testng.remote.RemoteTestNG -serport 17902 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1699035149\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-12-19 00:49:35.017
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupRemovalTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class GroupRemovalTests
+    void deleteSomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2014-12-19 00:49:41.026
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 17945 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1624671342\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar org.testng.remote.RemoteTestNG -serport 17945 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1624671342\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-12-19 00:50:12.434
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactRemovalTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactRemovalTests
+    void deleteSomeGroup()
+
+!ENTRY org.testng.eclipse 1 0 2014-12-19 00:50:12.762
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 17980 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1481747255\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar org.testng.remote.RemoteTestNG -serport 17980 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1481747255\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-12-19 01:02:25.196
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactModificationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactModificationTests
+    void modifySomeContact()
+
+!ENTRY org.testng.eclipse 1 0 2014-12-19 01:02:25.819
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 18059 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1764644442\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar org.testng.remote.RemoteTestNG -serport 18059 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1764644442\testng-customsuite.xml
