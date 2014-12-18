@@ -26,6 +26,9 @@ public class GroupCreationTests extends BaseForTests {
     app.getNavigationHelper().gotoGroupPage();
     app.getGroupHelper().initGroupCreation();    
     GroupData group = new GroupData();
+    group.setName("");
+    group.setHeader("");
+    group.setFooter("");
     app.getGroupHelper().fillGroupForm(group);    
     app.getGroupHelper().submitGroupCreation();
     app.getNavigationHelper().returnToGroupsPage();

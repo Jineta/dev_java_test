@@ -20,20 +20,20 @@ public class ContactData {
 	public String telSecondary;
 
 	public ContactData(){
-		firstname="";
-		lastname="";
-		address="";
-		telHome="";
-		telMobile="";
-		telWork="";
-		email1="";
-		email2="";
-		birthDay="-";
-		birthMonth="-";
-		birthYear="";
-		relatedGroup="";
-		adressSecondary="";
-		telSecondary="";	
+		firstname=null;
+		lastname=null;
+		address=null;
+		telHome=null;
+		telMobile=null;
+		telWork=null;
+		email1=null;
+		email2=null;
+		birthDay=null;
+		birthMonth=null;
+		birthYear=null;
+		relatedGroup=null;
+		adressSecondary=null;
+		telSecondary=null;	
 	}; 
 	//SET methods
 	public void setFirstname(String pFirstname){

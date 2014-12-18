@@ -9,11 +9,11 @@ public class NavigationHelper extends HelperBase {
 	}
 
 	public void gotoGroupPage() {
-		click(By.name("groups"));	
+		click(By.linkText("groups"));	
 	}
 
 	public void returnToMainPageFromContact() {
-		click(By.name("home page"));
+		click(By.linkText("home page"));
 	}
 
 	public void openMainPage() {
@@ -21,6 +21,6 @@ public class NavigationHelper extends HelperBase {
 	}
 
 	public void returnToGroupsPage() {
-		click(By.name("group page"));
+		click(By.linkText("group page"));
 	}
 }

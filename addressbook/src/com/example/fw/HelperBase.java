@@ -13,12 +13,10 @@ public abstract class HelperBase {// not for creation objects. only for storage 
 	protected WebDriver driver;
 	public boolean acceptNextAlert = true;
 
-	public HelperBase(ApplicationManager pManager) {
-		
+	public HelperBase(ApplicationManager pManager) {		
 		this.manager = pManager;//data inside object. ссілка на поле. речь идет о манагере, кот часть єтого обїекта, поле єтого обїекта
 	    this.driver = manager.driver;
 		}
-	
 	
 	public boolean isElementPresent(By by) {
 	    try {
@@ -53,17 +51,16 @@ public abstract class HelperBase {// not for creation objects. only for storage 
 	    }
 	  }
 
-
 	protected void type(By locator, String text) {
+		if (text != null) {
 		driver.findElement(locator).clear();
 		driver.findElement(locator).sendKeys(text);
+	
+		}
 	}
-
-
 	protected void click(By locator) {
 		driver.findElement(locator).click();
 	}
-
 
 	protected void selectByText(By locator, String text) {
 		new Select(driver.findElement(locator)).selectByVisibleText(text);

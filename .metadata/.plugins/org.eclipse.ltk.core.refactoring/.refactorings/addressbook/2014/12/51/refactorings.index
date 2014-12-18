@@ -44,3 +44,6 @@
 1418830058282	Inline local variable 'locator'
 1418830064873	Inline local variable 'text'
 1418830103191	Pull up 'selectByText(By, String)' to 'HelperBase'
+1418924331907	Copy compilation unit
+1418927580033	Rename type 'ManipulationContact'
+1418927611527	Delete element

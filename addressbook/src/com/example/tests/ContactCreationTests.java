@@ -35,7 +35,21 @@ public class ContactCreationTests  extends BaseForTests {
   public void testEmptyContactCreation() throws Exception {
 	app.getNavigationHelper().openMainPage();
 	app.getContactHelper().initContactCreation();
-	ContactData contact = new ContactData();	
+	ContactData contact = new ContactData();
+	contact.setFirstname("");
+	contact.setLastname("");
+	contact.setAddress("");
+	contact.setTelHome("");
+	contact.setTelMobile("");
+	contact.setTelWork("");
+	contact.setEmail1("");
+	contact.setEmail2("");
+	contact.setBirthDay("-");
+	contact.setBirthMonth("-");
+	contact.setBirthYear("");
+	contact.setRelatedGroup("");
+	contact.setAdressSecondary("");
+	contact.setTelSecondary("");
 	app.getContactHelper().fillContactForm(contact);
     app.getContactHelper().submitContactCreation();
     app.getNavigationHelper().returnToMainPageFromContact();

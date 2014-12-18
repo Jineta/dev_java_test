@@ -6,9 +6,9 @@ public class GroupData {
 	public String footer;
 
 	public GroupData() {
-		 name = "";
-		 header = "";
-		 footer = "";
+		 name = null;
+		 header = null;
+		 footer = null;
 	}
 
 //SET methods

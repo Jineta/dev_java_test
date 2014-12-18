@@ -11,7 +11,7 @@ public class ContactHelper extends HelperBase {
 	}
 
 	public void initContactCreation() {
-		click(By.name("add new"));
+		click(By.linkText("add new"));
 	}
 	
 	public void fillContactForm(ContactData contact) {
@@ -28,7 +28,7 @@ public class ContactHelper extends HelperBase {
 	    selectByText(By.name("bmonth"), contact.birthMonth);
 	    type(By.name("byear"), contact.birthYear);    
 	   
-	    selectByText(By.name("new_group"), contact.relatedGroup);
+	    //selectByText(By.name("new_group"), contact.relatedGroup);
 
 	    type(By.name("address2"), contact.adressSecondary);
 	    type(By.name("phone2"), contact.telSecondary);
@@ -38,4 +38,14 @@ public class ContactHelper extends HelperBase {
 		click(By.name("submit"));
 	}
 
+	public void deleteContact(int index) {
+		click(By.xpath("//input[@name='selected[]']["+index+"]"));
+		click(By.name("delete"));	
+		
+	}
+
+	/*public void editContact(int index) {
+		click(By.xpath("//tr["+ (index++) +"]/td[7]/a/img"));
+		click(By.title("edit"));	}*/	
+	
 }
