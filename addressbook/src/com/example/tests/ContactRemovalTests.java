@@ -4,12 +4,12 @@ import org.testng.annotations.Test;
 
 public class ContactRemovalTests extends BaseForTests {
 
-	@Test
+@Test
 public void deleteSomeContact(){
 		app.getNavigationHelper().openMainPage();	
 		app.getContactHelper().initEditContact(1);
 		app.getContactHelper().submitContactRemoval();
 		app.getNavigationHelper().returnToMainPageFromContact();
 	}
-}
 
+}

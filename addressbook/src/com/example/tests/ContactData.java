@@ -1,8 +1,5 @@
 package com.example.tests;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.Select;
-
 public class ContactData {
 	public String firstname;
 	public String lastname;

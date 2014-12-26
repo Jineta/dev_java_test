@@ -1,9 +1,6 @@
 package com.example.tests;
 
 import org.testng.annotations.Test;
-import java.util.regex.Pattern;
-import com.example.fw.ApplicationManager;
-
 
 public class ContactCreationTests  extends BaseForTests {
   @Test

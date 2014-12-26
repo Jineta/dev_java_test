@@ -1,0 +1,15 @@
+package com.example.tests;
+
+import org.testng.annotations.Test;
+
+public class ContactRemovalTests extends BaseForTests {
+
+	@Test
+public void deleteSomeContact(){
+		app.getNavigationHelper().openMainPage();	
+		app.getContactHelper().initEditContact(1);
+		app.getContactHelper().submitContactRemoval();
+		app.getNavigationHelper().returnToMainPageFromContact();
+	}
+}
+
