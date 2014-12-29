@@ -1,6 +1,6 @@
 package com.example.tests;
 
-public class ContactData {
+public class ContactData implements Comparable<ContactData>{
 	public String firstname;
 	public String lastname;
 	public String address;
@@ -55,7 +55,7 @@ public class ContactData {
 		email1= pEmail1;	
 		}
 	public void setEmail2(String pEmail2){
-		email1= pEmail2;	
+		email2= pEmail2;	
 		}
 	public void setBirthDay(String pBirthDay){
 		birthDay= pBirthDay;	
@@ -75,6 +75,42 @@ public class ContactData {
 	public void setTelSecondary(String pTelSecondary){
 		telSecondary= pTelSecondary;	
 		}
+	@Override // helps to optimize (if hashCodes aren't equal we stop compare). Else - goto equals method
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		//result = prime * result + ((name == null) ? 0 : name.hashCode()); //temporary comment
+		return result;
+	}
+
+	@Override //automatically converts object GroupData to string - > good presentation of test results
+	public String toString() {
+		return "ContactData [firstname=" + firstname + ", lastname=" + lastname + "]";
+	}
+
+	@Override   //compares objects
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		ContactData other = (ContactData) obj;
+		if (lastname == null) {
+			if (other.lastname != null)
+				return false;
+		} else if (!lastname.equals(other.lastname))
+			return false;
+		return true;
+	}
+
+	@Override  // a.compareTo( b ) -- если отрицательное число, значит a <b, если ноль -- равны, если положительное то a > b
+	//нет, boolean недостаточно. это для метода equals, который просто говорит "равны или не равны" 
+	//а метод compareTo говорит "меньше, равно или больше"
+	public int compareTo(ContactData other) {
+	return this.lastname.toLowerCase().compareTo(other.lastname.toLowerCase());
+	}
 	
 	
 }

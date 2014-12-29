@@ -1,6 +1,10 @@
 package com.example.fw;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import com.example.tests.ContactData;
 
@@ -22,7 +26,7 @@ public class ContactHelper extends HelperBase {
 	    type(By.name("mobile"), contact.telMobile);
 	    type(By.name("work"), contact.telWork);
 	    type(By.name("email"), contact.email1);
-	    type(By.name("emai2"), contact.email2);	    
+	    type(By.name("email2"), contact.email2);	    
 	    
 	    selectByText(By.name("bday"), contact.birthDay);
 	    selectByText(By.name("bmonth"), contact.birthMonth);
@@ -49,4 +53,20 @@ public class ContactHelper extends HelperBase {
 	public void submitContactRemoval() {
 		click(By.xpath("//form[2]/input[2]"));			
 	}
+
+	public List<ContactData> getContacts() {
+		List<ContactData> contacts = new ArrayList<ContactData>();//implementation of List type
+		List<WebElement> lines = driver.findElements(By.xpath("//table/tbody/tr[position()>1 and position()!=last()]"));// method findElements returns all elements which correspond selected locator
+     	for (WebElement line : lines) {
+			ContactData contact = new ContactData();
+			//contact.firstname= line.findElement(By.xpath("//td[3]")).getText();
+			contact.lastname= line.findElement(By.xpath("//td[2]")).getText();
+			
+			contacts.add(contact);
+		
+     	
+     	}		
+		return contacts;
+	}
+
 }

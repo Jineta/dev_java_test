@@ -40,7 +40,34 @@ public class BaseForTests {
  	}
  	return list.iterator();
  }
-	 
+ 
+ @DataProvider
+ public Iterator<Object[]> randomValidContactGenerator(){ 
+ 	List<Object[]> list1 = new ArrayList<Object[]>();//Object[] произвольный массив объектов - двумерный. будет потом передаваться, как набор
+ 	//параметров (могут иметь произвольные типы). В нашем случае - список наборов из одного элемента
+ 	//iterator должен сгенерировать список наборов из произвольных объектов в количестве, необходимом тестовому методу
+ 	for (int i = 0;i<3;i++) {
+ 		ContactData contact = new ContactData();
+ 		contact.firstname = generateRandomString();
+ 		contact.lastname= generateRandomString();
+ 		contact.address = generateRandomString();
+ 		contact.telHome= generateRandomString();
+ 		contact.telMobile= generateRandomString();
+ 		contact.telWork= generateRandomString();
+ 		contact.email1 = generateRandomString();
+ 		contact.email2= generateRandomString();
+ 		contact.birthDay= "30";
+ 		contact.birthMonth= "May";
+ 		contact.birthYear= "1985";
+ 		//contact.relatedGroup = generateRandomString();
+ 		contact.adressSecondary= generateRandomString();
+ 		contact.telSecondary= generateRandomString();
+ 		list1.add(new Object[]{contact});   
+ 	}
+ 	return list1.iterator();
+ }
+
+ 
 /*public String generateRandomString(){
 	Random rnd = new Random();	
 	int r = rnd.nextInt(4); 	
