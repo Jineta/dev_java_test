@@ -26,6 +26,7 @@ public class ContactCreationTests  extends BaseForTests {
     List<ContactData> newList = app.getContactHelper().getContacts();
    
     //compare states   
+
     oldList.add(contact);
     Collections.sort(oldList);
     assertEquals(newList, oldList);    

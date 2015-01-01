@@ -43,6 +43,8 @@ public class ContactHelper extends HelperBase {
 	}
 
 	public void initEditContact(int index) {
+		if (index == 1) {
+			index++;}
 		click(By.xpath("//tr["+ (index+1) +"]/td[7]/a/img"));
 	}
 	
@@ -57,14 +59,15 @@ public class ContactHelper extends HelperBase {
 	public List<ContactData> getContacts() {
 		List<ContactData> contacts = new ArrayList<ContactData>();//implementation of List type
 		List<WebElement> lines = driver.findElements(By.xpath("//table/tbody/tr[position()>1 and position()!=last()]"));// method findElements returns all elements which correspond selected locator
-     	for (WebElement line : lines) {
+		for (WebElement line : lines) {
 			ContactData contact = new ContactData();
-			//contact.firstname= line.findElement(By.xpath("//td[3]")).getText();
-			contact.lastname= line.findElement(By.xpath("//td[2]")).getText();
+			contact.firstname= line.findElement(By.xpath(".//td[3]")).getText();
+			contact.lastname= line.findElement(By.xpath(".//td[2]")).getText();
+			contact.email1=line.findElement(By.xpath(".//td[4]")).getText();
+			contact.telHome=line.findElement(By.xpath(".//td[5]")).getText();
 			
 			contacts.add(contact);
-		
-     	
+
      	}		
 		return contacts;
 	}

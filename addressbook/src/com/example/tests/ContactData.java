@@ -109,7 +109,14 @@ public class ContactData implements Comparable<ContactData>{
 	//нет, boolean недостаточно. это для метода equals, который просто говорит "равны или не равны" 
 	//а метод compareTo говорит "меньше, равно или больше"
 	public int compareTo(ContactData other) {
-	return this.lastname.toLowerCase().compareTo(other.lastname.toLowerCase());
+	
+		/*if (this.firstname.toLowerCase().compareTo(other.firstname.toLowerCase())==0
+		 && this.lastname.toLowerCase().compareTo(other.lastname.toLowerCase())==0
+		 && this.email1.toLowerCase().compareTo(other.email1.toLowerCase())==0
+		 && this.telHome.toLowerCase().compareTo(other.telHome.toLowerCase())==0){
+			return 0;
+		 } else return -1;*/
+	return this.lastname.toLowerCase().compareTo(other.lastname.toLowerCase()); 
 	}
 	
 	

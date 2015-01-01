@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Inline local variable &apos;com.example.fw.GroupHelper.getGroups().group&apos; in &apos;com.example.fw.GroupHelper.getGroups()&apos;&#x0D;&#x0A;- Original project: &apos;addressbook&apos;&#x0D;&#x0A;- Original element: &apos;com.example.fw.GroupHelper.getGroups().group&apos;" description="Inline local variable &apos;group&apos;" id="org.eclipse.jdt.ui.inline.temp" input="/src&lt;com.example.fw{GroupHelper.java" selection="1889 38" stamp="1419947915944" version="1.0"/>
+</session>

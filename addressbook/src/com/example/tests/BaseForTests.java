@@ -32,16 +32,17 @@ public class BaseForTests {
  	//параметров (могут иметь произвольные типы). ¬ нашем случае - список наборов из одного элемента
  	//iterator должен сгенерировать список наборов из произвольных объектов в количестве, необходимом тестовому методу
  	for (int i = 0;i<5;i++) {
- 		GroupData group = new GroupData();
- 		group.name = generateRandomString();
- 		group.header= generateRandomString();
- 		group.footer= generateRandomString();	 
+ 		GroupData group = new GroupData()
+ 			.withName(generateRandomString())
+ 			.withHeader(generateRandomString())
+ 			.withFooter(generateRandomString());
  		list.add(new Object[]{group});
  	}
  	return list.iterator();
- }
- 
- @DataProvider
+	
+}
+
+@DataProvider
  public Iterator<Object[]> randomValidContactGenerator(){ 
  	List<Object[]> list1 = new ArrayList<Object[]>();//Object[] произвольный массив объектов - двумерный. будет потом передаватьс€, как набор
  	//параметров (могут иметь произвольные типы). ¬ нашем случае - список наборов из одного элемента
@@ -88,5 +89,6 @@ public class BaseForTests {
 			 return "text"+rnd.nextInt();
 			}
 		}
+
 }
 
