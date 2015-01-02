@@ -1,5 +1,4 @@
 INDEX VERSION 1.127+E:\Inna\TrainingJava\dev_java_test\.metadata\.plugins\org.eclipse.jdt.core
-3840114762.index
 1947431546.index
 3991718231.index
 2338776811.index

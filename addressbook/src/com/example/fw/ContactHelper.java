@@ -64,12 +64,37 @@ public class ContactHelper extends HelperBase {
 			contact.firstname= line.findElement(By.xpath(".//td[3]")).getText();
 			contact.lastname= line.findElement(By.xpath(".//td[2]")).getText();
 			contact.email1=line.findElement(By.xpath(".//td[4]")).getText();
-			contact.telHome=line.findElement(By.xpath(".//td[5]")).getText();
-			
+			contact.telHome=line.findElement(By.xpath(".//td[5]")).getText();			
 			contacts.add(contact);
-
      	}		
 		return contacts;
 	}
+	
+	public String[] getMonths(){
+		List<WebElement> months = driver.findElements(By.xpath("//select[2][@name='bmonth']/option[position()>1]"));
+		String[] monthArr = new String[months.size()];
+		int i = 0;
+		if (months.size() > 0)
+			{			
+			for (WebElement m : months) {
+				 monthArr[i] = m.getText();
+		         i++;
+		  	}
+		}
+		return monthArr;
+	}
 
+	public String[] getDays(){
+		List<WebElement> days = driver.findElements(By.xpath("//select[1][@name='bday']/option[position()>1]"));
+		String[] dayArr = new String[days.size()];
+		int i = 0;
+		if (days.size() > 0)
+			{			
+			for (WebElement m : days) {
+				 dayArr[i] = m.getText();
+		         i++;
+		  	}
+		}
+		return dayArr;
+	}
 }

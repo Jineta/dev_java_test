@@ -47,6 +47,9 @@ public class BaseForTests {
  	List<Object[]> list1 = new ArrayList<Object[]>();//Object[] произвольный массив объектов - двумерный. будет потом передаваться, как набор
  	//параметров (могут иметь произвольные типы). В нашем случае - список наборов из одного элемента
  	//iterator должен сгенерировать список наборов из произвольных объектов в количестве, необходимом тестовому методу
+	app.getNavigationHelper().openMainPage();
+	app.getContactHelper().initContactCreation();
+ 	
  	for (int i = 0;i<3;i++) {
  		ContactData contact = new ContactData();
  		contact.firstname = generateRandomString();
@@ -57,18 +60,21 @@ public class BaseForTests {
  		contact.telWork= generateRandomString();
  		contact.email1 = generateRandomString();
  		contact.email2= generateRandomString();
- 		contact.birthDay= "30";
- 		contact.birthMonth= "May";
- 		contact.birthYear= "1985";
- 		//contact.relatedGroup = generateRandomString();
+ 		contact.birthDay= selectValidBDay();
+ 		contact.birthMonth= selectValidBMonth();
+ 		contact.birthYear= generateValidBYear();
+ 		//contact.relatedGroup = selectRandomGroup();
  		contact.adressSecondary= generateRandomString();
  		contact.telSecondary= generateRandomString();
  		list1.add(new Object[]{contact});   
  	}
+ 	
  	return list1.iterator();
  }
 
  
+
+
 /*public String generateRandomString(){
 	Random rnd = new Random();	
 	int r = rnd.nextInt(4); 	
@@ -89,6 +95,30 @@ public class BaseForTests {
 			 return "text"+rnd.nextInt();
 			}
 		}
+ 
+ public String generateValidBYear(){
+		Random rnd = new Random();		
+		String year = "19";
+		int r = rnd.nextInt(9);
+		if(r<4){
+			r=r+4;
+			return year+r+rnd.nextInt(9);	
+		} else{			
+			return year+r+rnd.nextInt(9);
+			}
+		}
 
+ public String selectValidBMonth(){
+	 Random rnd = new Random();
+	 int r=rnd.nextInt(app.getContactHelper().getMonths().length-1);
+	 return app.getContactHelper().getMonths()[r];	
+	}
+ 
+ public String selectValidBDay(){
+	 Random rnd = new Random();
+	 int r=rnd.nextInt(app.getContactHelper().getDays().length-1);
+	 return app.getContactHelper().getDays()[r];	
+
+	} 
 }
 
