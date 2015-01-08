@@ -1,36 +1,30 @@
 package com.example.tests;
 
-import static org.testng.Assert.assertEquals;
-
-import java.util.Collections;
-import java.util.List;
+import static org.junit.Assert.assertThat;
+import static org.hamcrest.Matchers.*;
 import java.util.Random;
-
+import com.example.utils.SortedListOf;
 import org.testng.annotations.Test;
 
 public class ContactRemovalTests extends BaseForTests {
 
 @Test
 public void deleteSomeContact(){
-		app.getNavigationHelper().openMainPage();
 		//save old state
-		List<ContactData> oldList = app.getContactHelper().getContacts();
-			
+	   SortedListOf<ContactData> oldList = app.getContactHelper().getContacts();
+	   if (oldList.size()!=0){	
 		//actions
 		Random rnd = new Random();
-		int index = rnd.nextInt(oldList.size()-1);		
-		app.getContactHelper().initEditContact(index);		
-		app.getContactHelper().submitContactRemoval();
-		app.getNavigationHelper().returnToMainPageFromContact();
+		int index = rnd.nextInt(oldList.size());		
+		app.getContactHelper().removeContact(index);
 		
 		//save new state
-		List<ContactData> newList = app.getContactHelper().getContacts();
+		SortedListOf<ContactData> newList = app.getContactHelper().getContacts();
 
 		//compare states	    
-		oldList.remove(index);
-		Collections.sort(oldList);
-		assertEquals(newList, oldList);
+		assertThat(newList,equalTo(oldList.without(index)));
 		}
+	}
 	}
 
 

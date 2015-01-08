@@ -1,20 +1,21 @@
 package com.example.tests;
 
 public class ContactData implements Comparable<ContactData>{
-	public String firstname;
-	public String lastname;
-	public String address;
-	public String telHome;
-	public String telMobile;
-	public String telWork;
-	public String email1;
-	public String email2;
-	public String birthDay;
-	public String birthMonth;
-	public String birthYear;
-	public String relatedGroup;
-	public String adressSecondary;
-	public String telSecondary;
+	private String firstname;
+	private String lastname;
+	private String address;
+	private String telHome;
+	private String telMobile;
+	private String telWork;
+	private String email1;
+	private String email2;
+	private String birthDay;
+	private String birthMonth;
+	private String birthYear;
+	private String relatedGroup;
+	private String adressSecondary;
+	private String telSecondary;
+
 
 	public ContactData(){
 		firstname=null;
@@ -32,49 +33,117 @@ public class ContactData implements Comparable<ContactData>{
 		adressSecondary=null;
 		telSecondary=null;	
 	}; 
-	//SET methods
-	public void setFirstname(String pFirstname){
-		firstname= pFirstname;	
-		}
-	public void setLastname(String pLastname){
-		lastname= pLastname;	
-		}
-	public void setAddress(String pAddress){
-		address= pAddress;	
-		}
-	public void setTelHome(String pTelHome){
-		telHome= pTelHome;	
-		}
-	public void setTelMobile(String pTelMobile){
-		telMobile= pTelMobile;	
-		}
-	public void setTelWork(String pTelWork){
-		telWork= pTelWork;	
-		}
-	public void setEmail1(String pEmail1){
-		email1= pEmail1;	
-		}
-	public void setEmail2(String pEmail2){
-		email2= pEmail2;	
-		}
-	public void setBirthDay(String pBirthDay){
-		birthDay= pBirthDay;	
-		}
-	public void setBirthMonth(String pBirthMonth){
-		birthMonth= pBirthMonth;	
-		}
-	public void setBirthYear(String pBirthYear){
-		birthYear= pBirthYear;	
-		}
-	public void setRelatedGroup(String pRelatedGroup){
-		relatedGroup= pRelatedGroup;	
-		}
-	public void setAdressSecondary(String pAdressSecondary){
-		adressSecondary= pAdressSecondary;	
-		}
-	public void setTelSecondary(String pTelSecondary){
-		telSecondary= pTelSecondary;	
-		}
+	//WITH methods
+	
+	
+	public ContactData withFirstName(String firstName) {
+		this.firstname = firstName;
+		return this;
+	}
+	
+	public ContactData withLastName(String lastName) {
+		this.lastname = lastName;
+		return this;
+	}
+	
+	public ContactData withAddress(String address) {
+		this.address = address;
+		return this;
+	}
+
+	public ContactData withTelHome(String telHome) {
+		this.telHome = telHome;
+		return this;
+	}	
+	
+	public ContactData withTelMobile(String telMobile) {
+		this.telMobile = telMobile;
+		return this;
+	}
+	
+	public ContactData withTelWork(String telWork) {
+		this.telWork = telWork;
+		return this;
+	}
+	
+	public ContactData withEmail1(String email1) {
+		this.email1 = email1;
+		return this;
+	}
+	
+	public ContactData withEmail2(String email2) {
+		this.email2 = email2;
+		return this;
+	}	
+	
+	public ContactData withBirthDay(String birthDay) {
+		this.birthDay = birthDay;
+		return this;
+	}	
+	
+	public ContactData withBirthMonth(String birthMonth) {
+		this.birthMonth = birthMonth;
+		return this;
+	}
+	
+	public ContactData withBirthYear(String birthYear) {
+		this.birthYear = birthYear;
+		return this;
+	}
+	
+	public ContactData withAddressSecondary(String addressSecondary) {
+		adressSecondary = addressSecondary;
+		return this;
+	}
+	
+	public ContactData withTelSecondary(String telSecondary) {
+		this.telSecondary = telSecondary;
+		return this;
+	}	
+	//GETTERS
+	
+	public String getFirstname() {
+		return firstname;
+	}
+	public String getLastname() {
+		return lastname;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public String getTelHome() {
+		return telHome;
+	}
+	public String getTelMobile() {
+		return telMobile;
+	}
+	public String getTelWork() {
+		return telWork;
+	}
+	public String getEmail1() {
+		return email1;
+	}
+	public String getEmail2() {
+		return email2;
+	}
+	public String getBirthDay() {
+		return birthDay;
+	}
+	public String getBirthMonth() {
+		return birthMonth;
+	}
+	public String getBirthYear() {
+		return birthYear;
+	}
+	public String getRelatedGroup() {
+		return relatedGroup;
+	}
+	public String getAdressSecondary() {
+		return adressSecondary;
+	}
+	public String getTelSecondary() {
+		return telSecondary;
+	}
 	@Override // helps to optimize (if hashCodes aren't equal we stop compare). Else - goto equals method
 	public int hashCode() {
 		final int prime = 31;
@@ -118,6 +187,8 @@ public class ContactData implements Comparable<ContactData>{
 		 } else return -1;*/
 	return this.lastname.toLowerCase().compareTo(other.lastname.toLowerCase()); 
 	}
+
+
 	
 	
 }

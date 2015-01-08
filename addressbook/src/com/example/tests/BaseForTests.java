@@ -11,7 +11,6 @@ import org.testng.annotations.DataProvider;
 
 import com.example.fw.ApplicationManager;
 
-
 public class BaseForTests {
 	
  protected ApplicationManager app;	
@@ -39,54 +38,34 @@ public class BaseForTests {
  		list.add(new Object[]{group});
  	}
  	return list.iterator();
-	
 }
 
 @DataProvider
  public Iterator<Object[]> randomValidContactGenerator(){ 
- 	List<Object[]> list1 = new ArrayList<Object[]>();//Object[] произвольный массив объектов - двумерный. будет потом передаваться, как набор
+ 	List<Object[]> list = new ArrayList<Object[]>();//Object[] произвольный массив объектов - двумерный. будет потом передаваться, как набор
  	//параметров (могут иметь произвольные типы). В нашем случае - список наборов из одного элемента
- 	//iterator должен сгенерировать список наборов из произвольных объектов в количестве, необходимом тестовому методу
-	app.getNavigationHelper().openMainPage();
-	app.getContactHelper().initContactCreation();
- 	
+ 	//iterator должен сгенерировать список наборов из произвольных объектов в количестве, необходимом тестовому методу	
  	for (int i = 0;i<3;i++) {
- 		ContactData contact = new ContactData();
- 		contact.firstname = generateRandomString();
- 		contact.lastname= generateRandomString();
- 		contact.address = generateRandomString();
- 		contact.telHome= generateRandomString();
- 		contact.telMobile= generateRandomString();
- 		contact.telWork= generateRandomString();
- 		contact.email1 = generateRandomString();
- 		contact.email2= generateRandomString();
- 		contact.birthDay= selectValidBDay();
- 		contact.birthMonth= selectValidBMonth();
- 		contact.birthYear= generateValidBYear();
+ 		ContactData contact = new ContactData()
+ 			.withFirstName(generateRandomString())
+ 			.withLastName(generateRandomString())
+ 			.withAddress(generateRandomString())
+ 			.withTelHome(generateRandomString())
+ 			.withTelMobile(generateRandomString())
+ 			.withTelWork(generateRandomString())
+ 			.withEmail1(generateRandomString())
+ 			.withEmail2(generateRandomString())
+ 			.withBirthDay(generateRandomDay())
+ 			.withBirthMonth(generateRandomMonth())
+ 			.withBirthYear(generateValidBYear())
+ 		 	.withAddressSecondary(generateRandomString())
+ 			.withTelSecondary(generateRandomString()); 		
  		//contact.relatedGroup = selectRandomGroup();
- 		contact.adressSecondary= generateRandomString();
- 		contact.telSecondary= generateRandomString();
- 		list1.add(new Object[]{contact});   
- 	}
- 	
- 	return list1.iterator();
+ 		list.add(new Object[]{contact});   
+ 	}	
+ 	return list.iterator();
  }
 
- 
-
-
-/*public String generateRandomString(){
-	Random rnd = new Random();	
-	int r = rnd.nextInt(4); 	
-	if(r==0){
-		return "";	
-	}else if(r==1){
-	   return null;
-     }   else{
-		 return "text"+rnd.nextInt();
-		}
-	}
-*/	
  public String generateRandomString(){
 		Random rnd = new Random();		
 		if(rnd.nextInt(4)==0){
@@ -96,6 +75,22 @@ public class BaseForTests {
 			}
 		}
  
+ public String generateRandomMonth(){
+	 String[] month = {"-","January","February","March","April","May","June","July","August","September","October","November","December"};
+	 Random rnd = new Random();		
+	 int index = rnd.nextInt(14);	
+     return month[index];
+ }
+ 
+ public String generateRandomDay(){
+	 Random rnd = new Random();		
+	 int day = rnd.nextInt(32);	
+     if (day ==0) {
+     return "-";
+     } else {
+     return Integer.toString(day);
+     }
+ }
  public String generateValidBYear(){
 		Random rnd = new Random();		
 		String year = "19";
@@ -107,18 +102,4 @@ public class BaseForTests {
 			return year+r+rnd.nextInt(9);
 			}
 		}
-
- public String selectValidBMonth(){
-	 Random rnd = new Random();
-	 int r=rnd.nextInt(app.getContactHelper().getMonths().length-1);
-	 return app.getContactHelper().getMonths()[r];	
-	}
- 
- public String selectValidBDay(){
-	 Random rnd = new Random();
-	 int r=rnd.nextInt(app.getContactHelper().getDays().length-1);
-	 return app.getContactHelper().getDays()[r];	
-
-	} 
 }
-
