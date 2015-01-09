@@ -78,7 +78,7 @@ public class BaseForTests {
  public String generateRandomMonth(){
 	 String[] month = {"-","January","February","March","April","May","June","July","August","September","October","November","December"};
 	 Random rnd = new Random();		
-	 int index = rnd.nextInt(13);	
+	 int index = rnd.nextInt(14);	
      return month[index];
  }
  
