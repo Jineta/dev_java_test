@@ -1,8 +1,13 @@
 package com.example.fw;
 
-import java.util.concurrent.TimeUnit;
+import java.util.Properties;
+//import java.util.concurrent.TimeUnit;
+
+
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class ApplicationManager {
 	
@@ -12,13 +17,22 @@ public class ApplicationManager {
    private NavigationHelper navigationHelper;	
    private GroupHelper groupHelper;
    private ContactHelper contactHelper;
+   private Properties properties;
    
-   public ApplicationManager () {
-	 driver = new FirefoxDriver();
-	 //baseUrl = "http://localhost:8081";
-	 baseUrl = "http://localhost";
-	 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-	 driver.get(baseUrl + "/addressbookv4.1.4");
+   public ApplicationManager (Properties properties) {
+	 this.properties = properties;
+	 String browser = properties.getProperty("browser");
+	 if ("firefox".equals(browser)){
+		 driver = new FirefoxDriver(); 
+	 } else if ("chrome".equals(browser)){
+		 driver = new InternetExplorerDriver(); 
+		// driver = new ChromeDriver();
+	 } else {
+	 throw new Error ("Unsupported browser:"+ browser);
+	 }
+	 baseUrl = properties.getProperty("baseUrl");
+	 //driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	 driver.get(baseUrl);
    }
  
 	public void stop() {

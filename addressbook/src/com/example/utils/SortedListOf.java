@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
+import com.example.tests.ContactData;
+import com.example.tests.GroupData;
 import com.google.common.collect.ForwardingList;
 import com.google.common.collect.Lists;
 
@@ -14,7 +16,7 @@ public class SortedListOf<T extends Comparable<T>> extends ForwardingList<T> {
   
   public SortedListOf() {
   }
-
+  
   public SortedListOf(SortedListOf<T> listToCopy) {
     list = Lists.newArrayList(listToCopy.list);
     Collections.sort(list);
@@ -25,7 +27,17 @@ public class SortedListOf<T extends Comparable<T>> extends ForwardingList<T> {
     Collections.sort(list);
   }
 
-  @Override
+
+/*public SortedListOf(SortedListOf<GroupData>() listToCopy) {
+    list = Lists.newArrayList(listToCopy.list);
+    Collections.sort(list);
+}
+
+public SortedListOf(SortedListOf<ContactData> listToCopy) {
+    list = Lists.newArrayList(listToCopy.list);
+    Collections.sort(list);
+}*/
+@Override
   protected List<T> delegate() {
     return list;
   }
