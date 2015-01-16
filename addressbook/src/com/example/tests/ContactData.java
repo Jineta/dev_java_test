@@ -101,7 +101,6 @@ public class ContactData implements Comparable<ContactData>{
 		return this;
 	}	
 	//GETTERS
-	
 	public String getFirstname() {
 		return firstname;
 	}

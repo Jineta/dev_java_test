@@ -8357,3 +8357,496 @@ org.eclipse.recommenders.utils.Logs$LogTraceException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.testng.eclipse 1 0 2015-01-14 19:19:47.061
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupRemovalTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.testng.Assert.assertEquals
+  import org.junit.Assert.assertThat
+  import org.hamcrest.Matchers.*
+  import java.util.Random
+  import org.testng.annotations.Test
+  import com.example.utils.SortedListOf
+  class GroupRemovalTests
+    void deleteSomeGroup()
+    void deleteNotAllGroups()
+    void deleteAllGroups()
+
+!ENTRY org.testng.eclipse 1 0 2015-01-14 19:19:47.614
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 41925 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--512925574\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar org.testng.remote.RemoteTestNG -serport 41925 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--512925574\testng-customsuite.xml
+
+!ENTRY org.eclipse.recommenders.calls.rcp 2 1 2015-01-14 19:25:26.530
+!MESSAGE Cannot obtain JDT’s lookup environment (debug only).
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:377)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:130)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:122)
+	at org.eclipse.recommenders.internal.calls.rcp.CallCompletionSessionProcessor.startSession(CallCompletionSessionProcessor.java:104)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.fireStartSession(IntelligentCompletionProposalComputer.java:229)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.computeCompletionProposals(IntelligentCompletionProposalComputer.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:337)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:325)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:282)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1861)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:378)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.testng.eclipse 1 0 2015-01-14 19:25:46.437
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupRemovalTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.testng.Assert.assertEquals
+  import org.junit.Assert.assertThat
+  import org.hamcrest.Matchers.*
+  import java.util.Random
+  import org.testng.annotations.Test
+  import com.example.utils.SortedListOf
+  class GroupRemovalTests
+    void deleteSomeGroup()
+    void deleteNotAllGroups()
+    void deleteAllGroups()
+
+!ENTRY org.testng.eclipse 1 0 2015-01-14 19:25:46.854
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 42092 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-113767443\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar org.testng.remote.RemoteTestNG -serport 42092 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-113767443\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-01-14 19:28:35.336
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupRemovalTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.testng.Assert.assertEquals
+  import org.junit.Assert.assertThat
+  import org.hamcrest.Matchers.*
+  import java.util.Random
+  import org.testng.annotations.Test
+  import com.example.utils.SortedListOf
+  class GroupRemovalTests
+    void deleteSomeGroup()
+    void deleteNotAllGroups()
+    void deleteAllGroups()
+
+!ENTRY org.testng.eclipse 1 0 2015-01-14 19:28:35.656
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 42299 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--974273442\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar org.testng.remote.RemoteTestNG -serport 42299 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--974273442\testng-customsuite.xml
+
+!ENTRY org.eclipse.recommenders.calls.rcp 2 1 2015-01-14 19:35:49.717
+!MESSAGE Cannot obtain JDT’s lookup environment (debug only).
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:377)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:130)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:122)
+	at org.eclipse.recommenders.internal.calls.rcp.CallCompletionSessionProcessor.startSession(CallCompletionSessionProcessor.java:104)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.fireStartSession(IntelligentCompletionProposalComputer.java:229)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.computeCompletionProposals(IntelligentCompletionProposalComputer.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:337)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:325)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:282)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1861)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:378)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.recommenders.calls.rcp 2 1 2015-01-14 19:36:05.869
+!MESSAGE Cannot obtain JDT’s lookup environment (debug only).
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:377)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:130)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:122)
+	at org.eclipse.recommenders.internal.calls.rcp.CallCompletionSessionProcessor.startSession(CallCompletionSessionProcessor.java:104)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.fireStartSession(IntelligentCompletionProposalComputer.java:229)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.computeCompletionProposals(IntelligentCompletionProposalComputer.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:337)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:325)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:282)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1861)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:378)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.testng.eclipse 1 0 2015-01-14 19:36:43.077
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupRemovalTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.testng.Assert.assertEquals
+  import org.junit.Assert.assertThat
+  import org.hamcrest.Matchers.*
+  import java.util.Random
+  import org.testng.annotations.Test
+  import com.example.utils.SortedListOf
+  class GroupRemovalTests
+    void deleteSomeGroup()
+    void deleteNotAllGroups()
+    void deleteAllGroups()
+
+!ENTRY org.testng.eclipse 1 0 2015-01-14 19:36:45.041
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 42597 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-553440726\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar org.testng.remote.RemoteTestNG -serport 42597 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-553440726\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-01-14 19:37:56.035
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupRemovalTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.testng.Assert.assertEquals
+  import org.junit.Assert.assertThat
+  import org.hamcrest.Matchers.*
+  import java.util.Random
+  import org.testng.annotations.Test
+  import com.example.utils.SortedListOf
+  class GroupRemovalTests
+    void deleteSomeGroup()
+    void deleteNotAllGroups()
+    void deleteAllGroups()
+
+!ENTRY org.testng.eclipse 1 0 2015-01-14 19:37:56.421
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 42663 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-272112659\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar org.testng.remote.RemoteTestNG -serport 42663 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-272112659\testng-customsuite.xml
+
+!ENTRY org.eclipse.recommenders.calls.rcp 2 1 2015-01-15 14:17:21.689
+!MESSAGE Cannot obtain JDT’s lookup environment (debug only).
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:377)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:130)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:122)
+	at org.eclipse.recommenders.internal.calls.rcp.CallCompletionSessionProcessor.startSession(CallCompletionSessionProcessor.java:104)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.fireStartSession(IntelligentCompletionProposalComputer.java:229)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.computeCompletionProposals(IntelligentCompletionProposalComputer.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:337)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:325)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:282)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1861)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:378)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.recommenders.calls.rcp 2 1 2015-01-15 14:17:42.093
+!MESSAGE Cannot obtain JDT’s lookup environment (debug only).
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:377)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:130)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:122)
+	at org.eclipse.recommenders.internal.calls.rcp.CallCompletionSessionProcessor.startSession(CallCompletionSessionProcessor.java:104)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.fireStartSession(IntelligentCompletionProposalComputer.java:229)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.computeCompletionProposals(IntelligentCompletionProposalComputer.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:337)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:325)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:282)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1861)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:378)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.testng.eclipse 1 0 2015-01-15 20:15:05.261
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import com.example.tests.ContactDataGenerator.loadContactsFromXMLFile
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.assertThat
+  import java.io.File
+  import java.io.IOException
+  import java.util.Iterator
+  import com.example.utils.SortedListOf
+  import org.testng.annotations.DataProvider
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    Iterator<Object[]> contactsFromFile()
+    void testNonEmptyContactCreation(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-01-15 20:15:05.460
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 44931 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-2127560622\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar org.testng.remote.RemoteTestNG -serport 44931 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-2127560622\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-01-16 15:23:19.472
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import com.example.tests.ContactDataGenerator.loadContactsFromXMLFile
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.assertThat
+  import java.io.File
+  import java.io.IOException
+  import java.util.Iterator
+  import com.example.utils.SortedListOf
+  import org.testng.annotations.DataProvider
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    Iterator<Object[]> contactsFromFile()
+    void testNonEmptyContactCreation(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-01-16 15:23:19.713
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 46898 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-199300284\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar org.testng.remote.RemoteTestNG -serport 46898 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-199300284\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-01-16 15:29:41.402
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import com.example.tests.ContactDataGenerator.loadContactsFromXMLFile
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.assertThat
+  import java.io.File
+  import java.io.IOException
+  import java.util.Iterator
+  import com.example.utils.SortedListOf
+  import org.testng.annotations.DataProvider
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    Iterator<Object[]> contactsFromFile()
+    void testNonEmptyContactCreation(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-01-16 15:29:41.840
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 46951 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--211442976\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar org.testng.remote.RemoteTestNG -serport 46951 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--211442976\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-01-16 18:09:22.870
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57506 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output E:\Inna\TrainingJava\dev_java_test\addressbook\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar org.testng.remote.RemoteTestNG -serport 57506 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output E:\Inna\TrainingJava\dev_java_test\addressbook\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-01-16 18:11:20.215
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57577 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output E:\Inna\TrainingJava\dev_java_test\addressbook\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar org.testng.remote.RemoteTestNG -serport 57577 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output E:\Inna\TrainingJava\dev_java_test\addressbook\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-01-16 18:12:20.596
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:GroupCreationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.hamcrest.Matchers.equalTo
+  import org.junit.Assert.assertThat
+  import org.testng.annotations.Test
+  import com.example.utils.SortedListOf
+  class GroupCreationTests
+    void testGroupCreationWithValidData(GroupData)
+
+!ENTRY org.testng.eclipse 1 0 2015-01-16 18:12:20.736
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57608 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1052319960\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar org.testng.remote.RemoteTestNG -serport 57608 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1052319960\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-01-16 18:13:08.222
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57760 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output E:\Inna\TrainingJava\dev_java_test\addressbook\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar org.testng.remote.RemoteTestNG -serport 57760 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output E:\Inna\TrainingJava\dev_java_test\addressbook\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-01-16 18:16:15.442
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:GroupCreationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.hamcrest.Matchers.equalTo
+  import org.junit.Assert.assertThat
+  import org.testng.annotations.Test
+  import com.example.utils.SortedListOf
+  class GroupCreationTests
+    void testGroupCreationWithValidData(GroupData)
+
+!ENTRY org.testng.eclipse 1 0 2015-01-16 18:16:19.498
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57835 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1965543639\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar org.testng.remote.RemoteTestNG -serport 57835 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1965543639\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-01-16 18:17:15.461
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57981 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output E:\Inna\TrainingJava\dev_java_test\addressbook\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar org.testng.remote.RemoteTestNG -serport 57981 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output E:\Inna\TrainingJava\dev_java_test\addressbook\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-01-16 18:32:48.148
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58155 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output E:\Inna\TrainingJava\dev_java_test\addressbook\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar org.testng.remote.RemoteTestNG -serport 58155 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output E:\Inna\TrainingJava\dev_java_test\addressbook\testng-customsuite.xml

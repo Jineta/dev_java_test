@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default suite">
+   <test verbose="1" name="CreateGroup">
+    <classes>
+      <class name="com.example.tests.GroupCreationTests"/>
+      <class name="com.example.tests.GroupRemovalTests">
+     	 <methods>
+     	 	<include name="deleteSomeGroup"/>
+     		<include name="deleteAllGroups"/>
+     	 </methods> 
+     </class> 
+    </classes>
+  </test> <!-- CreateGroup --> 
+
+</suite> <!-- Default suite -->
+
+

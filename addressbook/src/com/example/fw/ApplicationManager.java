@@ -24,9 +24,10 @@ public class ApplicationManager {
 	 String browser = properties.getProperty("browser");
 	 if ("firefox".equals(browser)){
 		 driver = new FirefoxDriver(); 
+	 } else if ("ie".equals(browser)){
+		 driver = new InternetExplorerDriver();  
 	 } else if ("chrome".equals(browser)){
-		 driver = new InternetExplorerDriver(); 
-		// driver = new ChromeDriver();
+        driver = new ChromeDriver();
 	 } else {
 	 throw new Error ("Unsupported browser:"+ browser);
 	 }

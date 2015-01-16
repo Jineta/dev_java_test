@@ -9,7 +9,7 @@ import com.example.utils.SortedListOf;
 
 public class GroupRemovalTests extends BaseForTests {
 
-//@Test
+@Test
 public void deleteSomeGroup(){	
 	   //save old state
 		SortedListOf<GroupData> oldList = app.getGroupHelper().getGroups();
@@ -27,7 +27,7 @@ public void deleteSomeGroup(){
 		}
 	}
 
-//@Test   
+@Test   
 public void deleteNotAllGroups(){
 	
    //save old state

@@ -2,11 +2,11 @@ package com.example.tests;
 
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
-import java.util.Random;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -15,9 +15,13 @@ import org.testng.annotations.DataProvider;
 import com.example.fw.ApplicationManager;
 
 import static com.example.tests.GroupDataGenerator.generateRandomGroups;
+import static com.example.tests.GroupDataGenerator.loadGroupsFromXMLFile;
+import static com.example.tests.ContactDataGenerator.generateRandomContacts;
+
 public class BaseForTests {
 	
- protected ApplicationManager app;	
+ protected static ApplicationManager app;	/*we need static app in order to run several classes in one test in testsuite "иначе, он просто остаётся в том объекте тестового класса, который был создан для выполнения первого теста
+ для второго тестового класса создаётся новый объект (другого класса) -- и в нём ссылка на ApplicationManager уже никем не инициализируется"*/
 
  @BeforeTest
  public void setUp() throws Exception {
@@ -31,83 +35,40 @@ public class BaseForTests {
  public void tearDown() throws Exception {
 	    app.stop();		
 	  }
-	
- @DataProvider
- public Iterator<Object[]> randomValidGroupGenerator(){ 
-	return wrapGroupsForDataProvider(generateRandomGroups(5)).iterator();
-}
 
+@DataProvider
+	public Iterator<Object[]> groupsFromFile() throws IOException {	 		
+	 	return wrapGroupsForDataProvider(loadGroupsFromXMLFile(new File("groups.xml"))).iterator();
+	}
+
+@DataProvider
+ public Iterator<Object[]> randomValidGroupGenerator(){ 
+	return wrapGroupsForDataProvider(generateRandomGroups(1)).iterator();
+}
+	
+@DataProvider
+ public Iterator<Object[]> randomValidContactGenerator(){ 
+	return wrapContactsForDataProvider(generateRandomContacts(1)).iterator();
+}
+ 
 public static List<Object[]> wrapGroupsForDataProvider(List<GroupData> groups) {
  	List<Object[]> list = new ArrayList<Object[]>();//Object[] произвольный массив объектов - двумерный. будет потом передаваться, как набор
  	//параметров (могут иметь произвольные типы). В нашем случае - список наборов из одного элемента
- 	//iterator должен сгенерировать список наборов из произвольных объектов в количестве, необходимом тестовому методу
- 	
+ 	//iterator должен сгенерировать список наборов из произвольных объектов в количестве, необходимом тестовому методу	
  	for (GroupData group: groups) {
 		list.add(new Object[]{group});
  	}
 	return list;
 }
 
-@DataProvider
- public Iterator<Object[]> randomValidContactGenerator(){ 
- 	List<Object[]> list = new ArrayList<Object[]>();//Object[] произвольный массив объектов - двумерный. будет потом передаваться, как набор
- 	//параметров (могут иметь произвольные типы). В нашем случае - список наборов из одного элемента
- 	//iterator должен сгенерировать список наборов из произвольных объектов в количестве, необходимом тестовому методу	
- 	for (int i = 0;i<3;i++) {
- 		ContactData contact = new ContactData()
- 			.withFirstName(generateRandomString())
- 			.withLastName(generateRandomString())
- 			.withAddress(generateRandomString())
- 			.withTelHome(generateRandomString())
- 			.withTelMobile(generateRandomString())
- 			.withTelWork(generateRandomString())
- 			.withEmail1(generateRandomString())
- 			.withEmail2(generateRandomString())
- 			.withBirthDay(generateRandomDay())
- 			.withBirthMonth(generateRandomMonth())
- 			.withBirthYear(generateValidBYear())
- 		 	.withAddressSecondary(generateRandomString())
- 			.withTelSecondary(generateRandomString()); 		
- 		//contact.relatedGroup = selectRandomGroup();
- 		list.add(new Object[]{contact});   
- 	}	
- 	return list.iterator();
- }
-//remove this methods after editing contacts
- public String generateRandomString(){
-		Random rnd = new Random();		
-		if(rnd.nextInt(4)==0){
-			return "";	
-		} else{
-			 return "text"+rnd.nextInt();
-			}
-		}
- 
- public String generateRandomMonth(){
-	 String[] month = {"-","January","February","March","April","May","June","July","August","September","October","November","December"};
-	 Random rnd = new Random();		
-	 int index = rnd.nextInt(13);	
-     return month[index];
- }
- 
- public String generateRandomDay(){
-	 Random rnd = new Random();		
-	 int day = rnd.nextInt(32);	
-     if (day ==0) {
-     return "-";
-     } else {
-     return Integer.toString(day);
-     }
- }
- public String generateValidBYear(){
-		Random rnd = new Random();		
-		String year = "19";
-		int r = rnd.nextInt(9);
-		if(r<4){
-			r=r+4;
-			return year+r+rnd.nextInt(9);	
-		} else{			
-			return year+r+rnd.nextInt(9);
-			}
-		}
+public static List<Object[]> wrapContactsForDataProvider(List<ContactData> contacts) {
+ 	List<Object[]> list = new ArrayList<Object[]>();
+ 	for (ContactData contact: contacts) {
+		list.add(new Object[]{contact});
+ 	}
+	return list;
 }
+
+}
+ 
+

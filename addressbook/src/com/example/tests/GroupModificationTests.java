@@ -11,7 +11,7 @@ import com.example.utils.SortedListOf;
 
 public class GroupModificationTests extends BaseForTests {
 
-@Test(dataProvider ="randomValidGroupGenerator")
+@Test(dataProvider ="generateRandomGroups")
 public void modifySomeGroup(GroupData group){    
 	    //save old state
 	    SortedListOf<GroupData> oldList = app.getGroupHelper().getGroups();

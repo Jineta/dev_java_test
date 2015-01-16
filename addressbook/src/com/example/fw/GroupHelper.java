@@ -68,7 +68,7 @@ public class GroupHelper extends HelperBase {
 	public int[] deleteSeveralGroups(int amount) {// later i would like to randomize selection of checkboxes
 		manager.navigateTo().groupsPage();		
 		int[] indexes = new int[amount];
-		for (int i = 0; i < amount; i++) {			
+		for (int i = 0; i < amount; i++) {	//6 0..5 1..6		
 			selectGroupByIndex(i);	
 		    indexes[i] = i; // it will be useful when i implement  randomization of parameter i
 		}

@@ -7,13 +7,14 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
+import static com.example.tests.GeneratorHelper.generateRandomString;
 import com.thoughtworks.xstream.XStream;
 
 public class GroupDataGenerator {
-
+//main method to generate specified amount of groups, save them to the file with specified name and type 
 	public static void main(String[] args) throws IOException {
+	
 	if (args.length<3){
 	System.out.println("Please spesify all expected parametrs (amount of test data, file, format)");
 	return;
@@ -37,8 +38,9 @@ public class GroupDataGenerator {
 			return;
 		}
 		}
-//----------------------------------------------------------------------------------
 	
+//Methods to WORK WITH FILES
+	// ... XML	
 	private static void saveGroupsToXMLFile(List<GroupData> groups, File file) throws IOException {
 	XStream xstream = new XStream();
 	xstream.alias("group", GroupData.class);
@@ -53,25 +55,14 @@ public class GroupDataGenerator {
 		xstream.alias("group", GroupData.class);
 		return (List<GroupData>)xstream.fromXML(file);
 	}
-
+	
+	// ... CSV	
 	private static void saveGroupsToCsvFile(List<GroupData> groups, File file) throws IOException {
 		FileWriter writer = new FileWriter(file);
 		for (GroupData group : groups) {
 			writer.write(group.getName()+","+group.getHeader()+","+group.getFooter()+",!"+"\n");
 		}
 		writer.close();
-	}
-
-	public static List<GroupData> generateRandomGroups(int amount) {
-		List<GroupData> list = new ArrayList<GroupData>();
-	 	for (int i = 0;i<amount;i++) {
-	 		GroupData group = new GroupData()
-	 			.withName(generateRandomString())
-	 			.withHeader(generateRandomString())
-	 			.withFooter(generateRandomString());
-	 		list.add(group);
-	 	}
-	 	return list;
 	}
 	
 	public static List<GroupData> loadGroupsFromCsvFile(File file) throws IOException {
@@ -93,16 +84,19 @@ public class GroupDataGenerator {
 		bufferedReader.close();
 		return list;
 	}
-
 	
-	 public static String generateRandomString(){
-			Random rnd = new Random();		
-			if(rnd.nextInt(4)==0){
-				return "";	
-			} else{
-				 return "text"+rnd.nextInt();
-				}
-			}	 
+//GENERATOR
+	public static List<GroupData> generateRandomGroups(int amount) {
+		List<GroupData> list = new ArrayList<GroupData>();
+	 	for (int i = 0;i<amount;i++) {
+	 		GroupData group = new GroupData()
+	 			.withName(generateRandomString()) 
+	 			.withHeader(generateRandomString())
+	 			.withFooter(generateRandomString());
+	 		list.add(group);
+	 	}
+	 	return list;
+	}
 }	
 
 
