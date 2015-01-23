@@ -1,0 +1,7 @@
+1421928684756	Rename type 'BaseForTests'
+1421931566555	Move compilation unit
+1421931613282	Copy compilation unit
+1421946296707	Rename field 'exec'
+1421948559313	Extract method 'initContactCreation'
+1421948596581	Extract method 'fillContactForm'
+1421948638025	Extract method 'confirmContactCreation'

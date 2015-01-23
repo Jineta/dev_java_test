@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6775" started-at="2015-01-23T13:43:11Z" finished-at="2015-01-23T13:43:18Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6775" started-at="2015-01-23T13:43:11Z" finished-at="2015-01-23T13:43:18Z">
+      <class name="com.example.tests.TestContactCreation">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.example.tests.TestContactCreation@18ef96]" name="setUp" is-config="true" duration-ms="95" started-at="2015-01-23T15:43:11Z" finished-at="2015-01-23T15:43:11Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="shouldCreateContactWithValidData()[pri:0, instance:com.example.tests.TestContactCreation@18ef96]" name="shouldCreateContactWithValidData" duration-ms="6645" started-at="2015-01-23T15:43:11Z" finished-at="2015-01-23T15:43:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateContactWithValidData -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.TestContactCreation@18ef96]" name="tearDown" is-config="true" duration-ms="2" started-at="2015-01-23T15:43:18Z" finished-at="2015-01-23T15:43:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.tests.TestContactCreation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
