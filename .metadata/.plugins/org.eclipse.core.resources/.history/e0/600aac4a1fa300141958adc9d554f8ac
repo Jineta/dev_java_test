@@ -39,7 +39,7 @@ public Contact getFirstContact() {
 	
 	Contact contact = new Contact()
 		.setFirstName(manager.getAutoItHelper().getText("TDBEdit12"))
-		.setLastName(manager.getAutoItHelper().getText("TDBEdit11"));
+		.setFirstName(manager.getAutoItHelper().getText("TDBEdit11"));
 	
 	manager.getAutoItHelper()
 		.click("Cancel")
