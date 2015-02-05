@@ -12,7 +12,7 @@ public class GroupRemovalTests extends BaseForTests {
 @Test
 public void deleteSomeGroup(){	
 	   //save old state
-		SortedListOf<GroupData> oldList = app.getGroupHelper().getGroups();
+		SortedListOf<GroupData> oldList = app.getGroupHelper().getUiGroups();
 		if ( oldList.size()!=0) {
 	    // actions
 		Random rnd = new Random();
@@ -20,7 +20,7 @@ public void deleteSomeGroup(){
 	    app.getGroupHelper().deleteGroup(index);		
 		
 		//save new state
-	    SortedListOf<GroupData> newList = app.getGroupHelper().getGroups();
+	    SortedListOf<GroupData> newList = app.getGroupHelper().getUiGroups();
 	   
 	    //compare states	    
 		assertThat(newList,equalTo(oldList.without(index)));
@@ -31,7 +31,7 @@ public void deleteSomeGroup(){
 public void deleteNotAllGroups(){
 	
    //save old state
-	SortedListOf<GroupData> oldList = app.getGroupHelper().getGroups();    
+	SortedListOf<GroupData> oldList = app.getGroupHelper().getUiGroups();    
 	if ( oldList.size()!=0) {
 	// actions
 	Random rnd = new Random();		
@@ -48,7 +48,7 @@ public void deleteNotAllGroups(){
 	}
 	
 	//save new state
-	SortedListOf<GroupData> newList = app.getGroupHelper().getGroups();
+	SortedListOf<GroupData> newList = app.getGroupHelper().getUiGroups();
    
     //compare states	     
     assertEquals(newList, oldList); //i just don't want to use here assertThat :)
@@ -58,7 +58,7 @@ public void deleteNotAllGroups(){
 @Test
 	public void deleteAllGroups(){		
 	   //save old state
-	    SortedListOf<GroupData> oldList = app.getGroupHelper().getGroups();
+	    SortedListOf<GroupData> oldList = app.getGroupHelper().getUiGroups();
 	    int oldListSize= oldList.size();
 
 	    if ( oldListSize!=0) {
@@ -69,7 +69,7 @@ public void deleteNotAllGroups(){
 		oldList.remove(i);			
 		}		
 		//save new state
-		SortedListOf<GroupData> newList = app.getGroupHelper().getGroups();
+		SortedListOf<GroupData> newList = app.getGroupHelper().getUiGroups();
 	   
 	    //compare states	     
 	   assertEquals(newList, oldList); //i just don't want to use here assertThat :)

@@ -22,14 +22,28 @@ public class BaseForTests {
 	
  protected static ApplicationManager app;	/*we need static app in order to run several classes in one test in testsuite "иначе, он просто остаётся в том объекте тестового класса, который был создан для выполнения первого теста
  для второго тестового класса создаётся новый объект (другого класса) -- и в нём ссылка на ApplicationManager уже никем не инициализируется"*/
-
+ private int checkFrequency;
+ private int checkCounter;
+ 
  @BeforeTest
  public void setUp() throws Exception {
 	 String configFile = System.getProperty("configFile","application.properties"); // required by user, default
 	 Properties properties =  new Properties();
 	 properties.load(new FileReader(new File(configFile)));
-	 app = new ApplicationManager(properties);
+	 app = new ApplicationManager(properties);	 
+	 checkCounter = 0;
+	 checkFrequency = Integer.parseInt(properties.getProperty("check.frequency","0"));
 	 }
+ 
+ protected boolean wantToCheck(){
+	 checkCounter++;
+	 if (checkCounter > checkFrequency)
+	 {checkCounter = 0;
+	 	return true;
+	 }else{
+		return false;
+	 }
+ }
  
  @AfterTest
  public void tearDown() throws Exception {

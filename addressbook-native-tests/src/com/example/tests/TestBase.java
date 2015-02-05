@@ -20,7 +20,7 @@ public class TestBase {
  @Parameters({"configFile"})
  public void setUp(@Optional String configFile) throws Exception {
 	 if (configFile==null){
-		 configFile = System.getProperty("configFile");
+		 configFile = System.getProperty("configFile","application.properties");
 	 }
 	 if (configFile==null){
 		 configFile = System.getenv("configFile");
@@ -32,7 +32,7 @@ public class TestBase {
 	 props.load(new FileReader(new File(configFile)));
 	 app =ApplicationManager.getInstance(props);
 	 }
- 
+
  @AfterTest
  public void tearDown() throws Exception {
 	 ApplicationManager.getInstance(null).stop();		
