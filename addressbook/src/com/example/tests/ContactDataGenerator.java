@@ -71,7 +71,7 @@ public class ContactDataGenerator {
 						+contact.getEmail1()+","
 						+contact.getEmail2()+","
 						+contact.getAddress()+","
-						+contact.getAdressSecondary()+","
+						+contact.getAddressSecondary()+","
 						+contact.getTelSecondary()+",!"+"\n");
 			}
 		writer.close();

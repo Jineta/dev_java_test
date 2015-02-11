@@ -1,65 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38564" started-at="2015-02-05T13:46:12Z" finished-at="2015-02-05T13:46:51Z">
+  <suite name="Default suite" duration-ms="47282" started-at="2015-02-11T13:37:00Z" finished-at="2015-02-11T13:37:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38564" started-at="2015-02-05T13:46:12Z" finished-at="2015-02-05T13:46:51Z">
-      <class name="com.example.tests.GroupCreationTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.GroupCreationTests@629f0666]" name="setUp" is-config="true" duration-ms="3705" started-at="2015-02-05T15:46:12Z" finished-at="2015-02-05T15:46:16Z">
+    <test name="Default test" duration-ms="47282" started-at="2015-02-11T13:37:00Z" finished-at="2015-02-11T13:37:47Z">
+      <class name="com.example.tests.ContactCreationTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.ContactCreationTests@629f0666]" name="setUp" is-config="true" duration-ms="4651" started-at="2015-02-11T15:37:00Z" finished-at="2015-02-11T15:37:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGroupCreationWithValidData(com.example.tests.GroupData)[pri:0, instance:com.example.tests.GroupCreationTests@629f0666]" name="testGroupCreationWithValidData" duration-ms="23573" started-at="2015-02-05T15:46:16Z" data-provider="groupsFromFile" finished-at="2015-02-05T15:46:40Z">
+        <test-method status="PASS" signature="testNonEmptyContactCreation(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactCreationTests@629f0666]" name="testNonEmptyContactCreation" duration-ms="28875" started-at="2015-02-11T15:37:05Z" data-provider="contactsFromFile" finished-at="2015-02-11T15:37:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[GroupData [name=group1, header=, footer=text1588355870]]]>
+                <![CDATA[ContactData [firstname=text-428155382, lastname=]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGroupCreationWithValidData -->
-        <test-method status="PASS" signature="testGroupCreationWithValidData(com.example.tests.GroupData)[pri:0, instance:com.example.tests.GroupCreationTests@629f0666]" name="testGroupCreationWithValidData" duration-ms="3010" started-at="2015-02-05T15:46:40Z" data-provider="groupsFromFile" finished-at="2015-02-05T15:46:43Z">
+        </test-method> <!-- testNonEmptyContactCreation -->
+        <test-method status="PASS" signature="testNonEmptyContactCreation(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactCreationTests@629f0666]" name="testNonEmptyContactCreation" duration-ms="6263" started-at="2015-02-11T15:37:34Z" data-provider="contactsFromFile" finished-at="2015-02-11T15:37:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[GroupData [name=group2, header=text-2061861212, footer=text2004687061]]]>
+                <![CDATA[ContactData [firstname=text-334955483, lastname=text1708374583]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGroupCreationWithValidData -->
-        <test-method status="PASS" signature="testGroupCreationWithValidData(com.example.tests.GroupData)[pri:0, instance:com.example.tests.GroupCreationTests@629f0666]" name="testGroupCreationWithValidData" duration-ms="3264" started-at="2015-02-05T15:46:43Z" data-provider="groupsFromFile" finished-at="2015-02-05T15:46:46Z">
+        </test-method> <!-- testNonEmptyContactCreation -->
+        <test-method status="PASS" signature="testNonEmptyContactCreation(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactCreationTests@629f0666]" name="testNonEmptyContactCreation" duration-ms="6362" started-at="2015-02-11T15:37:40Z" data-provider="contactsFromFile" finished-at="2015-02-11T15:37:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[GroupData [name=group3, header=text-497020848, footer=]]]>
+                <![CDATA[ContactData [firstname=text-1265369444, lastname=text-809901176]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGroupCreationWithValidData -->
-        <test-method status="PASS" signature="testGroupCreationWithValidData(com.example.tests.GroupData)[pri:0, instance:com.example.tests.GroupCreationTests@629f0666]" name="testGroupCreationWithValidData" duration-ms="3630" started-at="2015-02-05T15:46:46Z" data-provider="groupsFromFile" finished-at="2015-02-05T15:46:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[GroupData [name=group4, header=text596345117, footer=]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGroupCreationWithValidData -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.GroupCreationTests@629f0666]" name="tearDown" is-config="true" duration-ms="955" started-at="2015-02-05T15:46:50Z" finished-at="2015-02-05T15:46:51Z">
+        </test-method> <!-- testNonEmptyContactCreation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.ContactCreationTests@629f0666]" name="tearDown" is-config="true" duration-ms="614" started-at="2015-02-11T15:37:46Z" finished-at="2015-02-11T15:37:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.example.tests.GroupCreationTests -->
+      </class> <!-- com.example.tests.ContactCreationTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

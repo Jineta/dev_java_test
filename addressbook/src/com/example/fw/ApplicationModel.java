@@ -4,12 +4,15 @@ import java.util.List;
 
 import com.example.utils.SortedListOf;
 import com.example.tests.GroupData;
+import com.example.tests.ContactData;
 
 public class ApplicationModel {
 	private SortedListOf<GroupData> groups;
+	private SortedListOf<ContactData> contacts;
 	
+	//Groups methods
 	public SortedListOf<GroupData> getGroups(){
-	return groups;
+	return new SortedListOf<GroupData>(groups);
 	}
 	
 	public void setGroups(List<GroupData> groups){////!!!!!!?
@@ -25,7 +28,25 @@ public class ApplicationModel {
 		groups.remove(index);
 		return this;
 	}
-
+	
+   //contacts methods
+	public SortedListOf<ContactData> getContacts(){
+		return new SortedListOf<ContactData>(contacts);
+		}
+		
+	public void setContacts(List<ContactData> contacts){////!!!!!!?
+			this.contacts = new SortedListOf<ContactData>(contacts);	
+		}
+		
+	public ApplicationModel addContact(ContactData contact) {
+			contacts.add(contact);
+			return this;
+		}
+		
+	public ApplicationModel removeContact(int index) {
+			contacts.remove(index);
+			return this;
+		}
 	
 }
 

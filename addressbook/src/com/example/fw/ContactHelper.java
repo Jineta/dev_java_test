@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import com.example.tests.ContactData;
+import com.example.tests.GroupData;
 import com.example.utils.SortedListOf;
 
 public class ContactHelper extends WebDriverHelperBase {
@@ -16,18 +17,35 @@ public class ContactHelper extends WebDriverHelperBase {
 		super(pManager);		
 	}
 	
-	private SortedListOf<ContactData> cachedContacts;
-	public SortedListOf<ContactData> getContacts() {
-		if (cachedContacts==null){
-			rebuildCache();
-			}
-		return new SortedListOf<ContactData>(cachedContacts);
-		//return cachedContacts;
-		}
-		
-		private void rebuildCache() {
-		cachedContacts = new SortedListOf<ContactData>();
-		
+//	private SortedListOf<ContactData> cachedContacts;
+//	public SortedListOf<ContactData> getContacts() {
+//		if (cachedContacts==null){
+//			rebuildCache();
+//			}
+//		return new SortedListOf<ContactData>(cachedContacts);
+//		//return cachedContacts;
+//		}
+//		
+//		private void rebuildCache() {
+//		cachedContacts = new SortedListOf<ContactData>();
+//		
+//		manager.navigateTo().mainPage();
+//		List<WebElement> lines = driver.findElements(By.xpath("//table/tbody/tr[position()>1 and position()!=last()]"));// method findElements returns all elements which correspond selected locator
+//		for (WebElement line : lines) {		
+//			String firstname= line.findElement(By.xpath(".//td[3]")).getText();
+//			String lastname= line.findElement(By.xpath(".//td[2]")).getText();
+//			String email1=line.findElement(By.xpath(".//td[4]")).getText();
+//			String telHome=line.findElement(By.xpath(".//td[5]")).getText();
+//			
+//			cachedContacts.add(new ContactData()
+//					.withFirstName(firstname)
+//					.withLastName(lastname)
+//					.withEmail1(email1)
+//					.withTelHome(telHome));
+//     	}		
+//	}
+	public SortedListOf<ContactData> getUiContacts() {
+		SortedListOf<ContactData> contacts = new SortedListOf<ContactData>();//implementation of List type
 		manager.navigateTo().mainPage();
 		List<WebElement> lines = driver.findElements(By.xpath("//table/tbody/tr[position()>1 and position()!=last()]"));// method findElements returns all elements which correspond selected locator
 		for (WebElement line : lines) {		
@@ -36,21 +54,24 @@ public class ContactHelper extends WebDriverHelperBase {
 			String email1=line.findElement(By.xpath(".//td[4]")).getText();
 			String telHome=line.findElement(By.xpath(".//td[5]")).getText();
 			
-			cachedContacts.add(new ContactData()
+			contacts.add(new ContactData()
 					.withFirstName(firstname)
 					.withLastName(lastname)
 					.withEmail1(email1)
 					.withTelHome(telHome));
-     	}		
+     	}
+		return contacts;
 	}
-
+		
 	public ContactHelper createContact(ContactData contact) {
 		manager.navigateTo().mainPage();
 	    initContactCreation();
 	    fillContactForm(contact,CREATION);
 	    submitContactCreation();
 	    manager.navigateTo().returnToMainPageFromContact();	
-	    rebuildCache();
+	    	//rebuildCache();
+	    //update model
+	  	manager.getModel().addContact(contact);
 	    return this;
 	}
 	
@@ -60,7 +81,9 @@ public class ContactHelper extends WebDriverHelperBase {
 		fillContactForm(contact, MODIFICATION);
 		submitContactModification();
 		manager.navigateTo().returnToMainPageFromContact();
-		rebuildCache();
+			//rebuildCache();
+		//update model
+	  	manager.getModel().removeContact(index).addContact(contact);
 		return this;
 	}	
 		
@@ -68,10 +91,12 @@ public class ContactHelper extends WebDriverHelperBase {
 	    initEditContact(index);	
 		submitContactRemoval();	
 		manager.navigateTo().returnToMainPageFromContact();
-		rebuildCache();
+			//rebuildCache();
+		//update model
+	  	manager.getModel().removeContact(index);
 		return this;
 	}
-	
+//---------------------------------------------------------------------------------------------------------	
 	public ContactHelper initContactCreation() {
 		click(By.linkText("add new"));
 		return this;
@@ -96,14 +121,14 @@ public class ContactHelper extends WebDriverHelperBase {
 	    	throw new Error ("Group selector exists in contact modification form");
 	    	}*/
 	    	}
-	    type(By.name("address2"), contact.getAdressSecondary());
+	    type(By.name("address2"), contact.getAddressSecondary());
 	    type(By.name("phone2"), contact.getTelSecondary());
 	    return this;
 	}
 
 	public ContactHelper submitContactCreation() {
 		click(By.name("submit"));
-		cachedContacts=null;
+			//cachedContacts=null;
 		return this;
 	}
 
@@ -114,12 +139,12 @@ public class ContactHelper extends WebDriverHelperBase {
 	
     public ContactHelper submitContactModification() {
         click(By.xpath("//form[1]/input[11]"));
-        cachedContacts=null;
+        	//cachedContacts=null;
         return this;
 	}
 	public ContactHelper submitContactRemoval() {
 		click(By.xpath("//form[2]/input[2]"));
-		cachedContacts=null;
+			//cachedContacts=null;
 		return this;
 	}
 }

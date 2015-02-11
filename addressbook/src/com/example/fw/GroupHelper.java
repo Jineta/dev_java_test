@@ -15,7 +15,6 @@ public GroupHelper(ApplicationManager pManager) {
 	}
 	
 //	private SortedListOf<GroupData> cachedGroups;
-//
 //	public SortedListOf<GroupData> getGroups() {
 //		if (cachedGroups == null) {
 //			rebuildCache();
@@ -35,6 +34,7 @@ public GroupHelper(ApplicationManager pManager) {
 //			cachedGroups.add(new GroupData().withName(name));
 //		}		
 //	}
+
 public SortedListOf<GroupData> getUiGroups() {
 	SortedListOf<GroupData> groups = new SortedListOf<GroupData>();//implementation of List type
 
@@ -88,13 +88,16 @@ return groups;
 		int[] indexes = new int[amount];
 		for (int i = 0; i < amount; i++) {	//6 0..5 1..6		
 			selectGroupByIndex(i);	
-		    indexes[i] = i; // it will be useful when i implement  randomization of parameter i
+		    indexes[i] = i;// it will be usefull when i implement  randomization of parameter i
 		}
 		submitGroupDeletion();
 	    manager.navigateTo().returnToGroupsPage();
-	   //update model
-	   //manager.getModel().removeGroup(index);//!!! тут неправильно! исправить!!!!
 				//rebuildCache();
+	   //update model
+	    for (int j = amount-1; j >= 0 ; j--){
+	    	 manager.getModel().removeGroup(indexes[j]);
+		}
+	   
 	return indexes;
 	}
 	
