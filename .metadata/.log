@@ -286,3 +286,237 @@ java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.t
   Class:     org.testng.remote.RemoteTestNG
   Args:      -serport 46170 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1015559864\testng-customsuite.xml
 java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar org.testng.remote.RemoteTestNG -serport 46170 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1015559864\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-13 15:02:09.725
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupModificationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.junit.Assert.assertThat
+  import org.hamcrest.Matchers.*
+  import java.util.Random
+  import org.testng.annotations.Test
+  import com.example.utils.SortedListOf
+  class GroupModificationTests
+    void modifySomeGroup(GroupData)
+
+!ENTRY org.eclipse.jdt.debug 4 125 2015-02-13 15:02:16.785
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 0
+org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 42364.
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:186)
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:197)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:191)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:226)
+	at org.eclipse.jdi.internal.VirtualMachineImpl.classesBySignature(VirtualMachineImpl.java:638)
+	at org.eclipse.jdi.internal.VirtualMachineImpl.classesByName(VirtualMachineImpl.java:667)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.jdiClassesByName(JDIDebugTarget.java:1602)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.filterUnloadedTypes(JavaHotCodeReplaceManager.java:349)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.doHotCodeReplace(JavaHotCodeReplaceManager.java:460)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.access$0(JavaHotCodeReplaceManager.java:443)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager$1.run(JavaHotCodeReplaceManager.java:315)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1087)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:429)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jdt.debug 4 125 2015-02-13 15:02:19.852
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 0
+org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 42365.
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:186)
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:197)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:191)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:226)
+	at org.eclipse.jdi.internal.VirtualMachineImpl.classesBySignature(VirtualMachineImpl.java:638)
+	at org.eclipse.jdi.internal.VirtualMachineImpl.classesByName(VirtualMachineImpl.java:667)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.jdiClassesByName(JDIDebugTarget.java:1602)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.filterUnloadedTypes(JavaHotCodeReplaceManager.java:349)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.doHotCodeReplace(JavaHotCodeReplaceManager.java:460)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.access$0(JavaHotCodeReplaceManager.java:443)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager$1.run(JavaHotCodeReplaceManager.java:315)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1087)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:429)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jdt.debug 4 125 2015-02-13 15:02:22.853
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 0
+org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 42366.
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:186)
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:197)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:191)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:226)
+	at org.eclipse.jdi.internal.VirtualMachineImpl.classesBySignature(VirtualMachineImpl.java:638)
+	at org.eclipse.jdi.internal.VirtualMachineImpl.classesByName(VirtualMachineImpl.java:667)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.jdiClassesByName(JDIDebugTarget.java:1602)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.filterUnloadedTypes(JavaHotCodeReplaceManager.java:349)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.doHotCodeReplace(JavaHotCodeReplaceManager.java:460)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.access$0(JavaHotCodeReplaceManager.java:443)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager$1.run(JavaHotCodeReplaceManager.java:315)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1087)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:429)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.testng.eclipse 1 0 2015-02-13 15:05:23.628
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupModificationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.junit.Assert.assertThat
+  import org.hamcrest.Matchers.*
+  import java.util.Random
+  import org.testng.annotations.Test
+  import com.example.utils.SortedListOf
+  class GroupModificationTests
+    void modifySomeGroup(GroupData)
+
+!ENTRY org.testng.eclipse 1 0 2015-02-13 15:05:23.984
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55204 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1196923523\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar org.testng.remote.RemoteTestNG -serport 55204 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1196923523\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-13 15:07:08.998
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:GroupRemovalTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.testng.Assert.assertEquals
+  import org.junit.Assert.assertThat
+  import org.hamcrest.Matchers.*
+  import java.util.Random
+  import org.testng.annotations.Test
+  import com.example.utils.SortedListOf
+  class GroupRemovalTests
+    void deleteSomeGroup()
+    void deleteNotAllGroups()
+    void deleteAllGroups()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-13 15:07:10.021
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55275 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-2258889\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar org.testng.remote.RemoteTestNG -serport 55275 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-2258889\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-13 15:09:06.261
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:ContactModificationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.assertThat
+  import com.example.utils.SortedListOf
+  import java.util.Random
+  import org.testng.annotations.Test
+  class ContactModificationTests
+    void modifySomeContact(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-02-13 15:09:06.656
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55338 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-444905659\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar org.testng.remote.RemoteTestNG -serport 55338 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-444905659\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-13 15:15:20.243
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:ContactRemovalTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.junit.Assert.assertThat
+  import org.hamcrest.Matchers.*
+  import java.util.Random
+  import com.example.utils.SortedListOf
+  import org.testng.annotations.Test
+  class ContactRemovalTests
+    void deleteSomeContact()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-13 15:15:20.776
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55415 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1805574380\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar org.testng.remote.RemoteTestNG -serport 55415 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1805574380\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-13 15:24:39.351
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import com.example.tests.ContactDataGenerator.loadContactsFromXMLFile
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.assertThat
+  import java.io.File
+  import java.io.IOException
+  import java.util.Iterator
+  import com.example.utils.SortedListOf
+  import org.testng.annotations.DataProvider
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    Iterator<Object[]> contactsFromFile()
+    void testNonEmptyContactCreation(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-02-13 15:24:39.793
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55531 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--661719189\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar org.testng.remote.RemoteTestNG -serport 55531 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--661719189\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-13 15:25:43.939
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactModificationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.assertThat
+  import com.example.utils.SortedListOf
+  import java.util.Random
+  import org.testng.annotations.Test
+  class ContactModificationTests
+    void modifySomeContact(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-02-13 15:25:44.427
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55768 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--771464571\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar org.testng.remote.RemoteTestNG -serport 55768 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--771464571\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-13 15:26:25.014
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:ContactRemovalTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.junit.Assert.assertThat
+  import org.hamcrest.Matchers.*
+  import java.util.Random
+  import com.example.utils.SortedListOf
+  import org.testng.annotations.Test
+  class ContactRemovalTests
+    void deleteSomeContact()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-13 15:26:25.398
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55866 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--453015075\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar org.testng.remote.RemoteTestNG -serport 55866 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--453015075\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-13 15:31:37.989
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:GroupModificationTests.java [in com.example.tests [in src [in addressbook]]]
+  package com.example.tests
+  import org.junit.Assert.assertThat
+  import org.hamcrest.Matchers.*
+  import java.util.Random
+  import org.testng.annotations.Test
+  import com.example.utils.SortedListOf
+  class GroupModificationTests
+    void modifySomeGroup(GroupData)
+
+!ENTRY org.testng.eclipse 1 0 2015-02-13 15:31:38.678
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\addressbook\bin C:\selenium-server-standalone-2.44.0.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55952 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-316146117\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\addressbook\bin:C:\selenium-server-standalone-2.44.0.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream-1.4.7.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xmlpull-1.1.3.1.jar:C:\xstream-distribution-1.4.7-bin\xstream-1.4.7\lib\xstream\xpp3_min-1.1.4c.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar org.testng.remote.RemoteTestNG -serport 55952 -d E:\Inna\TrainingJava\dev_java_test\addressbook\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-316146117\testng-customsuite.xml

@@ -16,7 +16,7 @@ public class GroupModificationTests extends BaseForTests {
 
 public void modifySomeGroup(GroupData group){    
 	    //save old state
-	    SortedListOf<GroupData> oldList = app.getGroupHelper().getUiGroups();
+		SortedListOf<GroupData> oldList = app.getModel().getGroups();
 	    
 	  	if (oldList.size()!=0){
 	  	//actions
@@ -25,10 +25,21 @@ public void modifySomeGroup(GroupData group){
 		app.getGroupHelper().modifyGroup(group, index);
 
 		//save new state
-		SortedListOf<GroupData> newList = app.getGroupHelper().getUiGroups();
+		SortedListOf<GroupData> newList = app.getModel().getGroups();
 	   
 	    //compare states	    
-	    assertThat(newList, equalTo(oldList.without(index).withAdded(group)));  
-	  	}	
+	    assertThat(newList, equalTo(oldList.without(index).withAdded(group)));
+	    
+	    //compare model to implementation
+	    if (wantToCheck()){   
+	     if ("yes".equals(app.getProperty("check.db"))){
+	     	assertThat(app.getModel().getGroups(),equalTo(app.getHibernateHelper().listGroups()));
+	     	}    
+	     if ("yes".equals(app.getProperty("check.ui"))){
+	     	 assertThat(app.getModel().getGroups(),equalTo(app.getGroupHelper().getUiGroups()));
+	         }
+	     }
+	 }   
+	}	
 	}
-}
+

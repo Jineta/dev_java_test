@@ -3,8 +3,11 @@ package com.example.tests;
 import static org.testng.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 import static org.hamcrest.Matchers.*;
+
 import java.util.Random;
+
 import org.testng.annotations.Test;
+
 import com.example.utils.SortedListOf;
 
 public class GroupRemovalTests extends BaseForTests {
@@ -12,7 +15,8 @@ public class GroupRemovalTests extends BaseForTests {
 //@Test
 public void deleteSomeGroup(){	
 	   //save old state
-		SortedListOf<GroupData> oldList = app.getGroupHelper().getUiGroups();
+		SortedListOf<GroupData> oldList = app.getModel().getGroups();
+		
 		if ( oldList.size()!=0) {
 	    // actions
 		Random rnd = new Random();
@@ -20,18 +24,29 @@ public void deleteSomeGroup(){
 	    app.getGroupHelper().deleteGroup(index);		
 		
 		//save new state
-	    SortedListOf<GroupData> newList = app.getGroupHelper().getUiGroups();
+	    SortedListOf<GroupData> newList = app.getModel().getGroups();
 	   
 	    //compare states	    
 		assertThat(newList,equalTo(oldList.without(index)));
 		}
-	}
+		//compare model to implementation
+		   if (wantToCheck()){   
+		    if ("yes".equals(app.getProperty("check.db"))){
+		    	assertThat(app.getModel().getGroups(),equalTo(app.getHibernateHelper().listGroups()));
+		    	}    
+		    if ("yes".equals(app.getProperty("check.ui"))){
+		    	 assertThat(app.getModel().getGroups(),equalTo(app.getGroupHelper().getUiGroups()));
+		        }
+		    }
+		}   
+	
 
 //@Test   
 public void deleteNotAllGroups(){
 	
    //save old state
-	SortedListOf<GroupData> oldList = app.getGroupHelper().getUiGroups();    
+	SortedListOf<GroupData> oldList = app.getModel().getGroups();
+	
 	if ( oldList.size()!=0) {
 	// actions
 	Random rnd = new Random();		
@@ -48,17 +63,29 @@ public void deleteNotAllGroups(){
 	}
 	
 	//save new state
-	SortedListOf<GroupData> newList = app.getGroupHelper().getUiGroups();
+	SortedListOf<GroupData> newList = app.getModel().getGroups();
    
     //compare states	     
     assertEquals(newList, oldList); //i just don't want to use here assertThat :)
+
+    //compare model to implementation
+	   if (wantToCheck()){   
+	    if ("yes".equals(app.getProperty("check.db"))){
+	    	assertThat(app.getModel().getGroups(),equalTo(app.getHibernateHelper().listGroups()));
+	    	}    
+	    if ("yes".equals(app.getProperty("check.ui"))){
+	    	 assertThat(app.getModel().getGroups(),equalTo(app.getGroupHelper().getUiGroups()));
+	        }
+	    }
+	}  
 	}
-}
+	
 
 @Test
 	public void deleteAllGroups(){		
 	   //save old state
-	    SortedListOf<GroupData> oldList = app.getGroupHelper().getUiGroups();
+		SortedListOf<GroupData> oldList = app.getModel().getGroups();
+	
 	    int oldListSize= oldList.size();
 
 	    if ( oldListSize!=0) {
@@ -69,11 +96,21 @@ public void deleteNotAllGroups(){
 		oldList.remove(i);			
 		}		
 		//save new state
-		SortedListOf<GroupData> newList = app.getGroupHelper().getUiGroups();
+		SortedListOf<GroupData> newList = app.getModel().getGroups();
 	   
 	    //compare states	     
 	   assertEquals(newList, oldList); //i just don't want to use here assertThat :)
+	    
+		//compare model to implementation
+	   if (wantToCheck()){   
+	    if ("yes".equals(app.getProperty("check.db"))){
+	    	assertThat(app.getModel().getGroups(),equalTo(app.getHibernateHelper().listGroups()));
+	    	}    
+	    if ("yes".equals(app.getProperty("check.ui"))){
+	    	 assertThat(app.getModel().getGroups(),equalTo(app.getGroupHelper().getUiGroups()));
+	        }
 	    }
+	}  
 	}
-}
+	}
 
