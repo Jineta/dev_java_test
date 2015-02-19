@@ -1,0 +1,33 @@
+package com.example.tests;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.example.fw.User;
+
+import static org.testng.Assert.*;
+
+public class SignupTest extends BaseForTests {
+ public  User user = new User().setLogin("testuser1")
+		 .setPassword("123456")
+		 .setEmail("testuser1@localhost");
+
+ @BeforeClass
+ public void createMailUser(){
+ app.getJamesManager.createUser(user);
+ }
+ 
+ @Test
+ public void newUserShouldSignup(){
+    
+	 app.getAccountHelper().signup(user);
+	 assertTrue(app.getAccountHelper().isLogged(user));
+ }
+ 
+ @AfterClass
+ public void deleteMailUser(){
+ app.getJamesManager.deleteUser(user);
+ }
+ 
+ }

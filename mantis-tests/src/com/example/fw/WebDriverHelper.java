@@ -8,17 +8,32 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public abstract class WebDriverHelper extends HelperBase{// not for creation objects. only for storage common code
+public class WebDriverHelper extends HelperBase{
 
-	protected WebDriver driver;
-	public boolean acceptNextAlert = true;
+	private static WebDriver driver;
+	private StringBuffer verificationErrors = new StringBuffer();
+	public ApplicationManager manager;
+	private boolean acceptNextAlert = true;
 	private WebDriverWait wait;
+	
 
-	public WebDriverHelper(ApplicationManager pManager) {		
-		super(pManager);
+	public WebDriverHelper(ApplicationManager applicationManager) {		
+		super(applicationManager);
 	    this.driver = manager.getDriver();
 	    wait = new WebDriverWait(driver,10);
 		}
+	
+	public void stop() {
+		driver.quit();	   
+	}
+		
+	protected void openUrl (String string){
+		driver.get(manager.getProperty("baseUrl")+string);
+	}
+	
+	protected void openAbsoluteUrl (String string){
+		driver.get(string);
+	}
 	
 	public boolean isElementPresent(By by) {
 	    try {

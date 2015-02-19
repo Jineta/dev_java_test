@@ -1,0 +1,9 @@
+package com.example.fw;
+
+public class MailHelper extends HelperBase{
+
+	public MailHelper(ApplicationManager applicationManager) {
+		super(applicationManager);
+	}
+
+}

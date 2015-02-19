@@ -1,0 +1,10 @@
+package com.example.fw;
+
+public class User {
+
+	public Object setLogin(String string) {
+		// TODO Auto-generated method stub
+		return this;
+	}
+
+}

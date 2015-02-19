@@ -2,22 +2,16 @@ package com.example.tests;
 
 import java.io.File;
 import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Properties;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
 
 import com.example.fw.ApplicationManager;
 
 public class BaseForTests {
 	
- protected static ApplicationManager app;	/*we need static app in order to run several classes in one test in testsuite "иначе, он просто остаётся в том объекте тестового класса, который был создан для выполнения первого теста
- для второго тестового класса создаётся новый объект (другого класса) -- и в нём ссылка на ApplicationManager уже никем не инициализируется"*/
+ protected static ApplicationManager app;	
  private int checkFrequency;
  private int checkCounter;
  
@@ -45,39 +39,6 @@ public class BaseForTests {
  public void tearDown() throws Exception {
 	    app.stop();		
 	  }
-
-@DataProvider
-	public Iterator<Object[]> groupsFromFile() throws IOException {	 		
-	 	return wrapGroupsForDataProvider(loadGroupsFromXMLFile(new File("groups.xml"))).iterator();
-	}
-
-@DataProvider
- public Iterator<Object[]> randomValidGroupGenerator(){ 
-	return wrapGroupsForDataProvider(generateRandomGroups(1)).iterator();
-}
-	
-@DataProvider
- public Iterator<Object[]> randomValidContactGenerator(){ 
-	return wrapContactsForDataProvider(generateRandomContacts(1)).iterator();
-}
- 
-public static List<Object[]> wrapGroupsForDataProvider(List<GroupData> groups) {
- 	List<Object[]> list = new ArrayList<Object[]>();//Object[] произвольный массив объектов - двумерный. будет потом передаваться, как набор
- 	//параметров (могут иметь произвольные типы). В нашем случае - список наборов из одного элемента
- 	//iterator должен сгенерировать список наборов из произвольных объектов в количестве, необходимом тестовому методу	
- 	for (GroupData group: groups) {
-		list.add(new Object[]{group});
- 	}
-	return list;
-}
-
-public static List<Object[]> wrapContactsForDataProvider(List<ContactData> contacts) {
- 	List<Object[]> list = new ArrayList<Object[]>();
- 	for (ContactData contact: contacts) {
-		list.add(new Object[]{contact});
- 	}
-	return list;
-}
 
 }
  

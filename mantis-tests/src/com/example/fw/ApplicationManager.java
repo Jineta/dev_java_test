@@ -1,41 +1,54 @@
 package com.example.fw;
 
-import java.io.IOException;
 import java.util.Properties;
-//import java.util.concurrent.TimeUnit;
-
-
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+
 public class ApplicationManager {
-   private static ApplicationManager singelton;
    private WebDriverHelper webDriverHelper;
    private HibernateHelper hibernateHelper;
+   public AccountHelper accountHelper;
+   private MailHelper mailHelper; 
+   private JamesHelper jamesHelper;
    private Properties props;
-   
-   public String baseUrl; 
-   
-   public static ApplicationManager getInstance(Properties props) throws IOException {
-		if (singelton ==null){
-			singelton=new ApplicationManager();
-		}
-		return singelton;
+   public String baseUrl;
+   private WebDriver driver;
+   private Properties properties;
+
+   public ApplicationManager (Properties properties) {
+		 this.props = properties;}
+
+//	public static ApplicationManager getInstance() {
+//				if (singleton==null){
+//					singleton=new ApplicationManager();
+//				}
+//				return singleton;
+//		   }
+    public void setProperties (Properties props){
+				 this.props = props;
+			}
+    
+	public String getProperty (String key){
+		return props.getProperty(key);
 	}
-   
-   
-//   public ApplicationManager (Properties properties) {
-//	 this.props = properties;
-//	
-//   }
- 
+					
 	public void stop() {
 		if (webDriverHelper != null) {
 			webDriverHelper.stop(); 
 		}		   
+	}
+	
+	public AccountHelper getAccountHelper() {
+		if (accountHelper == null) {
+			accountHelper = new AccountHelper(this); 
+		}	
+	return accountHelper;
 	}
 	
 	public WebDriverHelper getWebDriverHelper()  {
@@ -52,33 +65,37 @@ public class ApplicationManager {
 	return hibernateHelper;		
 	}
 	
-	public String getProperty (String key){
-		return props.getProperty(key);
+	public MailHelper getMailHelper() {
+		if (mailHelper == null) {
+			mailHelper = new MailHelper(this); 
+		}	
+	return mailHelper;
 	}
-		
-	public void setProperties (Properties props){
-		 this.props = props;
+	
+	public JamesHelper getJamesHelper() {
+		if (jamesHelper == null) {
+			jamesHelper = new JamesHelper(this); 
+		}	
+	return jamesHelper;
 	}
-//	
-//	public WebDriver getDriver() {
-//		String browser = properties.getProperty("browser");
-//		if (driver == null) {
-//			 if ("firefox".equals(browser)){
-//				 driver = new FirefoxDriver(); 
-//			 } else if ("ie".equals(browser)){
-//				 driver = new InternetExplorerDriver();  
-//			 } else if ("chrome".equals(browser)){
-//		        driver = new ChromeDriver();
-//			 } else {
-//			 throw new Error ("Unsupported browser:"+ browser);
-//			 }
-//			 baseUrl = properties.getProperty("baseUrl");
-//			 //driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-//			 driver.get(baseUrl);
-//		}
-//	return driver;
-//	}
-
+	
+	public WebDriver getDriver() {
+		String browser = getProperty("browser");
+				 if ("firefox".equals(browser)){
+					 driver = new FirefoxDriver(); 
+				 } else if ("ie".equals(browser)){
+					 driver = new InternetExplorerDriver();  
+				 } else if ("chrome".equals(browser)){
+			        driver = new ChromeDriver();
+				 } else {
+				    driver = new HtmlUnitDriver();
+				 }
+//				 baseUrl = properties.getProperty("baseUrl");
+//				 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+//				 driver.get(baseUrl);
+			
+		return driver;
+		}
 	
 }
 
