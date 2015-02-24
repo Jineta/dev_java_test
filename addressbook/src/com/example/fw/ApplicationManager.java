@@ -19,7 +19,7 @@ public class ApplicationManager {
    private ContactHelper contactHelper;
    private Properties properties;
    private HibernateHelper hibernateHelper;
-   
+   private PrintPhoneHelper printPhoneHelper;
    private ApplicationModel model;
    
    public ApplicationManager (Properties properties) {
@@ -65,6 +65,13 @@ public class ApplicationManager {
 	return hibernateHelper;		
 	}
 	
+	public PrintPhoneHelper getPrintPhoneHelper() {
+		if (printPhoneHelper == null) {
+			printPhoneHelper = new PrintPhoneHelper(this); 
+		}
+	return printPhoneHelper;		
+	}
+	
 	public WebDriver getDriver() {
 		String browser = properties.getProperty("browser");
 		if (driver == null) {
@@ -87,6 +94,8 @@ public class ApplicationManager {
 public String getProperty (String key){
 	return properties.getProperty(key);
 }
+
+
 	
 	
 }

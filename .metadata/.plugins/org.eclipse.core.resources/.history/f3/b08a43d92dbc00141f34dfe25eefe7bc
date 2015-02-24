@@ -1,0 +1,75 @@
+package com.example.fw;
+
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import com.example.tests.ContactData;
+import com.example.utils.SortedListOf;
+
+public class PrintPhoneHelper extends WebDriverHelperBase {
+	
+
+	public PrintPhoneHelper(ApplicationManager pManager) {
+		super(pManager);	
+	}
+
+	public SortedListOf<String> getUiPrintPhones() {
+		SortedListOf<String> printPhones = new SortedListOf<String>();//implementation of List type
+		manager.navigateTo().printPhonesPage();
+	
+		List<WebElement> cells = driver.findElements(By.xpath("//table/tbody/tr/td"));// method findElements returns all elements which correspond selected locator
+		
+		for (WebElement cell : cells) {		
+			String tempString= cell.getText();
+								    System.out.println("tempString");
+									System.out.println(tempString);
+									System.out.println(tempString.length());	
+			if 	(tempString.compareTo(".")!=0){ //delete all empty cells which were added in order to 
+			printPhones.add(tempString);
+									System.out.println("printPhones");
+									System.out.println(printPhones);
+									System.out.println(printPhones.size());
+			}
+   	}
+		return printPhones;
+	}
+
+	public String getDbContactString(ContactData dbContact) {
+		String dbContactString = ":";
+		
+		String firstname = dbContact.getFirstname();
+		String lastname =dbContact.getLastname();
+		String telHome =dbContact.getTelHome();
+		String telMobile =dbContact.getTelMobile();
+		String telWork =dbContact.getTelWork();
+		String birthDay =dbContact.getBirthDay();
+		String birthMonth =dbContact.getBirthMonth();
+		String birthYear=dbContact.getBirthYear();
+		String telSecondary=dbContact.getTelSecondary();
+		
+		
+		dbContactString = (firstname.trim()+" "+lastname.trim()+":").trim(); //i ignore addressbook bug with trimming 1 last space before :, my test removes all spaces before and after
+		
+		if (telHome != "") {
+			dbContactString = dbContactString +"\n"+"H:"+telHome.trim();	
+		}
+		
+		if (telMobile != "") {
+			dbContactString = dbContactString +"\n"+"M:"+telMobile.trim();	
+		}		
+		
+		if (telWork != "") {
+			dbContactString = dbContactString +"\n"+"W:"+telWork.trim();	
+		}
+		
+		
+		return dbContactString;
+	}
+
+
+
+}

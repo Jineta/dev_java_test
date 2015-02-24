@@ -1,0 +1,86 @@
+package com.example.fw;
+
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import com.example.tests.ContactData;
+import com.example.utils.SortedListOf;
+
+public class PrintPhoneHelper extends WebDriverHelperBase {
+	
+
+	public PrintPhoneHelper(ApplicationManager pManager) {
+		super(pManager);	
+	}
+
+	public SortedListOf<String> getUiPrintPhones() {
+		SortedListOf<String> printPhones = new SortedListOf<String>();//implementation of List type
+		manager.navigateTo().printPhonesPage();
+	
+		List<WebElement> cells = driver.findElements(By.xpath("//table/tbody/tr/td"));// method findElements returns all elements which correspond selected locator
+		
+		for (WebElement cell : cells) {		
+			String tempString= cell.getText();
+			    System.out.println("tempString");
+				System.out.println(tempString);
+				System.out.println(tempString.length());
+	
+			if 	(tempString.compareTo(".")!=0){ //delete all empty cells which were added in order to 
+			printPhones.add(tempString);
+				System.out.println("printPhones");
+				System.out.println(printPhones);
+				System.out.println(printPhones.size());
+			}
+   	}
+		return printPhones;
+	}
+
+	public boolean compareName(int i, ContactData dbContact, String printContact) {
+		String name = getPrintName(printContact);
+		return false;
+		
+	}
+
+	private String getPrintName(String printContact) {
+		Pattern regex = Pattern.compile(".*:\n");
+		Matcher matcher = regex.matcher(printContact);
+		if (matcher.find()){
+			return matcher.group();
+		} else {
+			return "";
+		}
+	
+	}
+
+	public boolean compareHomePhone(int i) {
+		// TODO Auto-generated method stub
+		return false;	
+	}
+
+	public boolean compareMobilePhone(int i) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean compareBirthday(int i) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean compareWorkPhone(int i) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean compareSecondaryPhone(int i) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+
+
+}

@@ -1,0 +1,39 @@
+package com.example.tests;
+
+import static org.hamcrest.Matchers.equalTo;
+import static org.junit.Assert.assertThat;
+
+import java.util.List;
+
+import org.apache.jasper.tagplugins.jstl.core.ForEach;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import com.example.utils.SortedListOf;
+
+public class PrintPhoneCompareTests extends BaseForTests{
+	
+	public boolean isEqual;  // какую зону видимости выбрать?
+
+	@Test
+	public void comparePrintphonesWithDb() { 
+		 
+		//get lists 
+		SortedListOf<ContactData> dbCotactList = app.getHibernateHelper().listContacts();
+	 	SortedListOf<String> PrintList = app.getPrintPhoneHelper().getUiPrintPhones();
+		
+	 	// actions
+//	 	if (dbCotactList.size()==PrintList.size()) {
+//	 		for (int i = 0; i < dbCotactList.size(); i++) {	 			
+//	 			isEqual= app.getPrintPhoneHelper().compareName(i);
+//	 			isEqual = app.getPrintPhoneHelper().compareHomePhone(i);
+//	 			isEqual = app.getPrintPhoneHelper().compareMobilePhone(i);
+//	 			isEqual= app.getPrintPhoneHelper().compareWorkPhone(i);
+//	 			isEqual= app.getPrintPhoneHelper().compareBirthday(i);
+//	 			isEqual = app.getPrintPhoneHelper().compareSecondaryPhone(i);
+//	 	} 		
+//	 	}
+	}
+}
+

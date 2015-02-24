@@ -1,0 +1,69 @@
+package com.example.fw;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import com.example.tests.ContactData;
+import com.example.tests.GroupData;
+import com.example.utils.SortedListOf;
+
+public class PrintPhoneHelper extends WebDriverHelperBase {
+	
+	public PrintPhoneHelper(ApplicationManager pManager) {
+		super(pManager);	
+	}
+
+	public SortedListOf<String> getUiPrintPhones() {
+		SortedListOf<String> printPhones = new SortedListOf<String>();//implementation of List type
+		manager.navigateTo().printPhonesPage();
+		List<WebElement> lines = driver.findElements(By.xpath("//table/tbody/tr[position()>1 and position()!=last()]"));// method findElements returns all elements which correspond selected locator
+		for (WebElement line : lines) {		
+			String firstname= line.findElement(By.xpath(".//td[3]")).getText();
+			String lastname= line.findElement(By.xpath(".//td[2]")).getText();
+			String email1=line.findElement(By.xpath(".//td[4]")).getText();
+			String telHome=line.findElement(By.xpath(".//td[5]")).getText();
+			
+			contacts.add(new ContactData()
+					.withFirstName(firstname)
+					.withLastName(lastname)
+					.withEmail1(email1)
+					.withTelHome(telHome));
+     	}
+		return printPhones;
+	}
+
+	public boolean compareName(int i) {
+		return false;
+		
+	}
+
+	public boolean compareHomePhone(int i) {
+		// TODO Auto-generated method stub
+		return false;	
+	}
+
+	public boolean compareMobilePhone(int i) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean compareBirthday(int i) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean compareWorkPhone(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public boolean compareSecondaryPhone(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+
+}

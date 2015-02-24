@@ -26,7 +26,7 @@ public class HibernateHelper extends HelperBase {
 		}
 	}
 	
-	public List<ContactData> listContacts() {
+	public SortedListOf<ContactData> listContacts() {//!!!before List<ContactData>
 		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
 		Transaction trans = session.beginTransaction();
 		try {

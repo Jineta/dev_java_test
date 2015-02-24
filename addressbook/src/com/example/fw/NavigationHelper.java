@@ -20,6 +20,20 @@ public class NavigationHelper extends WebDriverHelperBase {
 		} 
 	}
 	
+	public void printPhonesPage() {
+		if(! onPrintPhonesPage()){
+			click(By.linkText("print phones"));	
+			} 
+	}	
+	private boolean onPrintPhonesPage() {
+		if (driver.getCurrentUrl().contains("/view.php?all&print&phones")// подумать достаточно ли єтого
+				&& driver.findElements(By.name("new")).size()>0)
+			{return true;
+			} else {
+				return false;
+			}
+	}
+
 	private boolean onMainPage() {
 		return driver.findElements(By.id("maintable")).size()>0;
 	}
@@ -41,4 +55,6 @@ public class NavigationHelper extends WebDriverHelperBase {
 	public void returnToGroupsPage() {
 		click(By.linkText("group page"));
 	}
+
+
 }
