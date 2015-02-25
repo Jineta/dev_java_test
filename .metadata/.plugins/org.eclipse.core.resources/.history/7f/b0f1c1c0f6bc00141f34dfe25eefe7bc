@@ -31,20 +31,11 @@ public class HibernateHelper extends HelperBase {
 		Transaction trans = session.beginTransaction();
 		try {
           return new SortedListOf<ContactData>(
-          (List<ContactData>) session.createQuery("from ContactData").list());
+          //	(List<ContactData>) session.createQuery("from ContactData").list(),  from Contacts c order by c.lastname);
+        		(List<ContactData>) session.createQuery("from ContactData ORDER BY lastname ASC, firstname ASC").list());
 		} finally {
           trans.commit();
 		}
-	}
-		
-		public List<ContactData> listContactsSortedByQuery() {
-			Session session = HibernateUtil.getSessionFactory().getCurrentSession();
-			Transaction trans = session.beginTransaction();
-			try {
-	          return new SortedListOf<ContactData>(
-	        		(List<ContactData>) session.createQuery("from ContactData ORDER BY lastname ASC, firstname ASC").list());
-			} finally {
-	          trans.commit();
-			}
+
 }
 }

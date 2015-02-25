@@ -2,10 +2,14 @@ package com.example.fw;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import com.example.tests.ContactData;
+import com.example.utils.SortedListOf;
 
 public class PrintPhoneHelper extends WebDriverHelperBase {
 	
@@ -14,9 +18,9 @@ public class PrintPhoneHelper extends WebDriverHelperBase {
 		super(pManager);	
 	}
 
-	public List<String> getUiPrintPhones() {
-		List<String> printPhones = new ArrayList<String>();
-		//SortedListOf<String> printPhones = new SortedListOf<String>();
+	public SortedListOf<String> getUiPrintPhones() {
+		//List<String> printPhones = new ArrayList<String>();//implementation of List type
+		SortedListOf<String> printPhones = new SortedListOf<String>();
 		
 		manager.navigateTo().printPhonesPage();
 		List<WebElement> cells = driver.findElements(By.xpath("//table/tbody/tr/td"));// method findElements returns all elements which correspond selected locator
@@ -78,7 +82,7 @@ public class PrintPhoneHelper extends WebDriverHelperBase {
 			dbContactString = dbContactString +"\n"+"P: "+dbContact.getTelSecondary().trim();	
 		}
 		
-		System.out.println("\n dbContactString");
+		System.out.println("dbContactString");
 		System.out.println(dbContactString);
 		
 		return dbContactString;
