@@ -4,18 +4,22 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.Properties;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 
+import com.example.fw.AccountHelper;
 import com.example.fw.ApplicationManager;
+import com.example.fw.JamesHelper;
 
 public class BaseForTests {
 	
  protected static ApplicationManager app;	
  private int checkFrequency;
  private int checkCounter;
- 
- @BeforeTest
+ public JamesHelper james;
+ public AccountHelper accHelper;
+
+ @BeforeClass
  public void setUp() throws Exception {
 	 String configFile = System.getProperty("configFile","application.properties"); // required by user, default
 	 Properties properties =  new Properties();
@@ -23,6 +27,8 @@ public class BaseForTests {
 	 app = new ApplicationManager(properties);	 
 	 checkCounter = 0;
 	 checkFrequency = Integer.parseInt(properties.getProperty("check.frequency","0"));
+	 james = app.getJamesHelper();
+	 accHelper = app.getAccountHelper();
 	 }
  
  protected boolean wantToCheck(){
@@ -35,7 +41,7 @@ public class BaseForTests {
 	 }
  }
  
- @AfterTest
+ @AfterClass
  public void tearDown() throws Exception {
 	    app.stop();		
 	  }

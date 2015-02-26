@@ -1,10 +1,13 @@
 package com.example.fw;
 
+import java.util.List;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -12,7 +15,6 @@ public class WebDriverHelper extends HelperBase{
 
 	private static WebDriver driver;
 	private StringBuffer verificationErrors = new StringBuffer();
-	public ApplicationManager manager;
 	private boolean acceptNextAlert = true;
 	private WebDriverWait wait;
 	
@@ -26,7 +28,20 @@ public class WebDriverHelper extends HelperBase{
 	public void stop() {
 		driver.quit();	   
 	}
-		
+	
+	protected WebElement findElement(By linkText) {
+		try {
+		return driver.findElement(linkText);
+		} catch (Exception e) {
+			return null;
+		}
+			
+	}
+	
+	protected List<WebElement> findElements(By linkText) {
+		return driver.findElements(linkText);
+	}
+	
 	protected void openUrl (String string){
 		driver.get(manager.getProperty("baseUrl")+string);
 	}

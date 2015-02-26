@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Feb 19 13:27:31 EET 2015</td>
+<td>Started on:</td><td>Thu Feb 26 22:57:48 EET 2015</td>
 </tr>
-<tr><td>Total time:</td><td>7469 seconds (7469042 ms)</td>
+<tr><td>Total time:</td><td>234 seconds (234765 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,8 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.example.tests.SignupTest.createMailUser()'><b>createMailUser</b><br>Test class: com.example.tests.SignupTest</td>
-<td><div><pre>java.lang.OutOfMemoryError: Java heap space
-	at java.util.Arrays.copyOf(Unknown Source)
-	at java.lang.AbstractStringBuilder.expandCapacity(Unknown Source)
-	at java.lang.AbstractStringBuilder.ensureCapacityInternal(Unknown Source)
-	at java.lang.AbstractStringBuilder.append(Unknown Source)
-	at java.lang.StringBuffer.append(Unknown Source)
-	at com.example.fw.JamesHelper.readUntil(JamesHelper.java:59)
-	at com.example.fw.JamesHelper.initTelnetSession(JamesHelper.java:49)
-	at com.example.fw.JamesHelper.doesUserExist(JamesHelper.java:88)
-	at com.example.tests.SignupTest.createMailUser(SignupTest.java:18)
+<td><div><pre>java.lang.NullPointerException
+	at com.example.tests.SignupTest.createMailUser(SignupTest.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -109,17 +101,10 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.run(TestNG.java:1057)
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1349414238", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1349414238'><pre>java.lang.OutOfMemoryError: Java heap space
-	at java.util.Arrays.copyOf(Unknown Source)
-	at java.lang.AbstractStringBuilder.expandCapacity(Unknown Source)
-	at java.lang.AbstractStringBuilder.ensureCapacityInternal(Unknown Source)
-	at java.lang.AbstractStringBuilder.append(Unknown Source)
-	at java.lang.StringBuffer.append(Unknown Source)
-	at com.example.fw.JamesHelper.readUntil(JamesHelper.java:59)
-	at com.example.fw.JamesHelper.initTelnetSession(JamesHelper.java:49)
-	at com.example.fw.JamesHelper.doesUserExist(JamesHelper.java:88)
-	at com.example.tests.SignupTest.createMailUser(SignupTest.java:18)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div><a href='#' onClick='toggleBox("stack-trace64133603", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace64133603'><pre>java.lang.NullPointerException
+	at com.example.tests.SignupTest.createMailUser(SignupTest.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -143,9 +128,10 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.run(TestNG.java:1057)
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
 <td>0</td>
-<td>com.example.tests.SignupTest@22a71081</td></tr>
+<td>com.example.tests.SignupTest@37574691</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -158,12 +144,7 @@ function toggleAllBoxes() {
 <td title='com.example.tests.SignupTest.deleteMailUser()'><b>deleteMailUser</b><br>Test class: com.example.tests.SignupTest</td>
 <td></td>
 <td>0</td>
-<td>com.example.tests.SignupTest@22a71081</td></tr>
-<tr>
-<td title='com.example.tests.SignupTest.tearDown()'><b>tearDown</b><br>Test class: com.example.tests.SignupTest</td>
-<td></td>
-<td>0</td>
-<td>null</td></tr>
+<td>com.example.tests.SignupTest@37574691</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -176,7 +157,7 @@ function toggleAllBoxes() {
 <td title='com.example.tests.SignupTest.newUserShouldSignup()'><b>newUserShouldSignup</b><br>Test class: com.example.tests.SignupTest</td>
 <td></td>
 <td>0</td>
-<td>com.example.tests.SignupTest@22a71081</td></tr>
+<td>com.example.tests.SignupTest@37574691</td></tr>
 </table><p>
 </body>
 </html>

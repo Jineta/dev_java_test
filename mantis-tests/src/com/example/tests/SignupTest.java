@@ -1,12 +1,15 @@
 package com.example.tests;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.example.fw.User;
 
-import static org.testng.Assert.*;
+import static org.hamcrest.Matchers.*;
+import static org.junit.Assert.*;
 
 public class SignupTest extends BaseForTests {
  public  User user = new User().setLogin("testuser1")
@@ -15,23 +18,38 @@ public class SignupTest extends BaseForTests {
 
  @BeforeClass
  public void createMailUser(){
-	 if (! app.getJamesHelper().doesUserExist(user.login)){
-		 app.getJamesHelper().createUser(user.login,user.password);
+	 System.out.println("before begin");
+	 if (!james.doesUserExist(user.login)){
+		  james.createUser(user.login,user.password);
 	 } 
+	 System.out.println("before end");
  }
  
- @Test
+@Test
  public void newUserShouldSignup(){
-    
-	 app.getAccountHelper().signup(user);
-	 assertTrue(app.getAccountHelper().isLogged(user));
+    accHelper.signup(user); 
+    accHelper.login(user);
+	 assertThat(accHelper.loggedUser(),equalTo(user.login));
+ }
+ 
+//@Test
+ public void existedUserShouldNotSignup(){
+	try{
+    accHelper.signup(user);
+	} catch (Exception e){
+		assertThat(e.getMessage(), containsString("That username is already being used"));
+		return;
+	}
+	fail("Exception expected");
  }
  
  @AfterClass
  public void deleteMailUser(){
-	 if (app.getJamesHelper().doesUserExist(user.login)){
-		 app.getJamesHelper().deleteUser(user.login);
+	 System.out.println("after begin");
+	 if (james.doesUserExist(user.login)){
+		 james.deleteUser(user.login);
 	 }
+	 System.out.println("after end");
  }
  
  }

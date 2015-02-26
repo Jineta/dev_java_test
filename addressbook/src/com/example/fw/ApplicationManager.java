@@ -30,7 +30,8 @@ public class ApplicationManager {
    }
  
 	public void stop() {
-		driver.quit();	   
+		if (driver!=null){
+		driver.quit();} 
 	}
 	
 	public ApplicationModel getModel(){

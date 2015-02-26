@@ -2,31 +2,16 @@
 <testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7469042" started-at="2015-02-19T11:27:31Z" finished-at="2015-02-19T13:32:00Z">
+  <suite name="Default suite" duration-ms="234765" started-at="2015-02-26T20:57:48Z" finished-at="2015-02-26T21:01:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7469042" started-at="2015-02-19T11:27:31Z" finished-at="2015-02-19T13:32:00Z">
+    <test name="Default test" duration-ms="234765" started-at="2015-02-26T20:57:48Z" finished-at="2015-02-26T21:01:42Z">
       <class name="com.example.tests.SignupTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.SignupTest@22a71081]" name="setUp" is-config="true" duration-ms="29" started-at="2015-02-19T13:27:31Z" finished-at="2015-02-19T13:27:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="createMailUser()[pri:0, instance:com.example.tests.SignupTest@22a71081]" name="createMailUser" is-config="true" duration-ms="0" started-at="2015-02-19T13:27:31Z" finished-at="2015-02-19T13:27:31Z">
-          <exception class="java.lang.OutOfMemoryError">
-            <message>
-              <![CDATA[Java heap space]]>
-            </message>
+        <test-method status="FAIL" signature="createMailUser()[pri:0, instance:com.example.tests.SignupTest@37574691]" name="createMailUser" is-config="true" duration-ms="0" started-at="2015-02-26T22:57:48Z" finished-at="2015-02-26T22:57:48Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.OutOfMemoryError: Java heap space
-	at java.util.Arrays.copyOf(Unknown Source)
-	at java.lang.AbstractStringBuilder.expandCapacity(Unknown Source)
-	at java.lang.AbstractStringBuilder.ensureCapacityInternal(Unknown Source)
-	at java.lang.AbstractStringBuilder.append(Unknown Source)
-	at java.lang.StringBuffer.append(Unknown Source)
-	at com.example.fw.JamesHelper.readUntil(JamesHelper.java:59)
-	at com.example.fw.JamesHelper.initTelnetSession(JamesHelper.java:49)
-	at com.example.fw.JamesHelper.doesUserExist(JamesHelper.java:88)
-	at com.example.tests.SignupTest.createMailUser(SignupTest.java:18)
+              <![CDATA[java.lang.NullPointerException
+	at com.example.tests.SignupTest.createMailUser(SignupTest.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -50,24 +35,21 @@
 	at org.testng.TestNG.run(TestNG.java:1057)
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.OutOfMemoryError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createMailUser -->
-        <test-method status="SKIP" signature="newUserShouldSignup()[pri:0, instance:com.example.tests.SignupTest@22a71081]" name="newUserShouldSignup" duration-ms="47" started-at="2015-02-19T15:32:00Z" finished-at="2015-02-19T15:32:00Z">
+        <test-method status="SKIP" signature="newUserShouldSignup()[pri:0, instance:com.example.tests.SignupTest@37574691]" name="newUserShouldSignup" duration-ms="8" started-at="2015-02-26T23:01:42Z" finished-at="2015-02-26T23:01:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newUserShouldSignup -->
-        <test-method status="SKIP" signature="deleteMailUser()[pri:0, instance:com.example.tests.SignupTest@22a71081]" name="deleteMailUser" is-config="true" duration-ms="0" started-at="2015-02-19T15:32:00Z" finished-at="2015-02-19T15:32:00Z">
+        <test-method status="SKIP" signature="deleteMailUser()[pri:0, instance:com.example.tests.SignupTest@37574691]" name="deleteMailUser" is-config="true" duration-ms="0" started-at="2015-02-26T23:01:42Z" finished-at="2015-02-26T23:01:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteMailUser -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.example.tests.SignupTest@22a71081]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-02-19T15:32:00Z" finished-at="2015-02-19T15:32:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- com.example.tests.SignupTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

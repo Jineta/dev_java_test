@@ -17,7 +17,6 @@ public class GroupModificationTests extends BaseForTests {
 public void modifySomeGroup(GroupData group){    
 	    //save old state
 		SortedListOf<GroupData> oldList = app.getModel().getGroups();
-	    
 	  	if (oldList.size()!=0){
 	  	//actions
 	  	Random rnd = new Random();

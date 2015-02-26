@@ -1,5 +1,7 @@
 package com.example.fw;
 
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 public class HelperBase {
 	protected ApplicationManager manager;
 

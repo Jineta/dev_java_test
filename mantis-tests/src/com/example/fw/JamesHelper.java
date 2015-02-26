@@ -22,7 +22,6 @@ public class JamesHelper extends HelperBase{
 		int port = Integer.parseInt(manager.getProperty("mailserver.adminport"));
 		String login = manager.getProperty("mailserver.adminlogin");
 		String password = manager.getProperty("mailserver.adminpassword");
-		
 		try {
 			telnet.connect(mailserver, port);
 			in = telnet.getInputStream();
@@ -39,7 +38,7 @@ public class JamesHelper extends HelperBase{
 		readUntil("Password:");
 		write("");
 
-		// Second login attempt, must be successfull
+		// Second login attempt, must be successfully
 		readUntil("Login id:");
 		write(login);
 		readUntil("Password:");
@@ -89,20 +88,20 @@ public class JamesHelper extends HelperBase{
 		write("verify " + name);
 		String result = readUntil("exist");
 		closeTelnetSession();
-		return result.trim().equals("User " + name + " exist ");
+		return result.trim().equals("User " + name + " exist");
 	}
 
 	public void createUser(String name, String passwd) {
 		initTelnetSession();
 		write("adduser " + name + " " + passwd);
-		String result = readUntil("User " + name + " added ");
+		String result = readUntil("User " + name + " added");
 		closeTelnetSession();
 	}
 
 	public void deleteUser(String name) {
 		initTelnetSession();
 		write("deluser " + name);
-		String result = readUntil("User " + name + " deleted ");
+		String result = readUntil("User " + name + " deleted");
 		closeTelnetSession();
 	}
 
