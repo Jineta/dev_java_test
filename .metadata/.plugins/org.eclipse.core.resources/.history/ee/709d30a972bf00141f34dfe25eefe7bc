@@ -12,11 +12,11 @@ import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 
 public class SignupTest extends BaseForTests {
- public  User user = new User().setLogin("testuser5")
+ public  User user = new User().setLogin("testuser1")
 		 .setPassword("123456")
-		 .setEmail("testuser5@localhost");
+		 .setEmail("testuser1@localhost");
 
- @BeforeTest
+ @BeforeClass
  public void createMailUser(){
 	 if (!james.doesUserExist(user.login)){
 		  james.createUser(user.login,user.password);
@@ -41,7 +41,7 @@ public class SignupTest extends BaseForTests {
 	fail("Exception expected");
  }
  
-@AfterTest
+ @AfterClass
  public void deleteMailUser(){
 	 System.out.println("after begin");
 	 if (james.doesUserExist(user.login)){

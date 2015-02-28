@@ -29,7 +29,6 @@ INDEX VERSION 1.127+E:\Inna\TrainingJava\dev_java_test\.metadata\.plugins\org.ec
 1947431546.index
 2486087126.index
 178244056.index
-2765497985.index
 3132822378.index
 1724670495.index
 15007665.index

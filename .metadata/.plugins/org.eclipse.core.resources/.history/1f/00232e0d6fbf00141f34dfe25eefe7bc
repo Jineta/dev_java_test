@@ -24,7 +24,7 @@ public class AccountHelper extends WebDriverHelper {
 		if (errorMessage !=null){
 			throw new RuntimeException (errorMessage.getText());
 		}
-		pause(30000);
+		pause(3000);
 		String msg = manager.getMailHelper().getNewMail(user.login, user.password);
 		String confirmationLink = getConfirmationLink(msg);
 		openAbsoluteUrl(confirmationLink);

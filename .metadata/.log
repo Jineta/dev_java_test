@@ -8771,3 +8771,185 @@ java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.t
   Class:     org.testng.remote.RemoteTestNG
   Args:      -serport 34356 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1710847841\testng-customsuite.xml
 java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 34356 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1710847841\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-28 19:27:25.996
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-28 19:27:26.356
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 35053 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1903052302\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 35053 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1903052302\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-28 19:29:41.290
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-28 19:29:41.610
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 35122 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-460795597\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 35122 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-460795597\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-28 19:53:23.387
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-28 19:53:23.757
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 35342 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--843063707\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 35342 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--843063707\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-28 19:54:43.680
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-28 19:54:44.110
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 35380 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1920126272\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 35380 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1920126272\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-28 20:33:16.546
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-28 20:33:16.866
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 35731 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1825001873\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 35731 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1825001873\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-28 20:43:19.073
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-28 20:43:19.453
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 35928 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--333580663\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 35928 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--333580663\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-28 21:11:31.430
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-28 21:11:31.950
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 36069 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1750992690\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 36069 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1750992690\testng-customsuite.xml
