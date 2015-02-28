@@ -16,6 +16,7 @@ public class AccountHelper extends WebDriverHelper {
 		openUrl("/signup_page.php");
 		//click(By.cssSelector("span.bracket-link"));
 		
+		//click(By.linkText("Signup for a new account "));
 		type(By.name("username"),user.login);
 		type(By.name("email"),user.email);
 		click(By.cssSelector("input.button"));

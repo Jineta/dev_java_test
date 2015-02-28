@@ -18,7 +18,8 @@ public class MailHelper extends HelperBase {
 		public Msg(String text){
 			this.text = text;
 		}
-
+		
+	
 	}
 	
 	public String getNewMail(String user, String password) {

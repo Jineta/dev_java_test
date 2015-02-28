@@ -7,6 +7,9 @@
         <methods>
           <include name="createMailUser"/>
           <include name="newUserShouldSignup"/>
+          <include name="deleteMailUser"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.example.tests.SignupTest -->
     </classes>

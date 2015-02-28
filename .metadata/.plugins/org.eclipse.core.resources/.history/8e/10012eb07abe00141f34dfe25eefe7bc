@@ -6,8 +6,6 @@ import java.util.Properties;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 
 import com.example.fw.AccountHelper;
 import com.example.fw.ApplicationManager;
@@ -21,7 +19,7 @@ public class BaseForTests {
  public JamesHelper james;
  public AccountHelper accHelper;
 
- @BeforeTest
+ @BeforeClass
  public void setUp() throws Exception {
 	 String configFile = System.getProperty("configFile","application.properties"); // required by user, default
 	 Properties properties =  new Properties();
@@ -43,7 +41,7 @@ public class BaseForTests {
 	 }
  }
  
- @AfterTest
+ @AfterClass
  public void tearDown() throws Exception {
 	    app.stop();		
 	  }

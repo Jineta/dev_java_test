@@ -47,7 +47,7 @@ public class SignupTest extends BaseForTests {
 	 if (james.doesUserExist(user.login)){
 		 james.deleteUser(user.login);
 	 }
-
+	 System.out.println("after end");
  }
  
  }

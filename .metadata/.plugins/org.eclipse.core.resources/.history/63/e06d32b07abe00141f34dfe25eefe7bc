@@ -18,9 +18,11 @@ public class SignupTest extends BaseForTests {
 
  @BeforeClass
  public void createMailUser(){
+	 System.out.println("before begin");
 	 if (!james.doesUserExist(user.login)){
 		  james.createUser(user.login,user.password);
 	 } 
+	 System.out.println("before end");
  }
  
 @Test
@@ -47,7 +49,7 @@ public class SignupTest extends BaseForTests {
 	 if (james.doesUserExist(user.login)){
 		 james.deleteUser(user.login);
 	 }
-
+	 System.out.println("after end");
  }
  
  }

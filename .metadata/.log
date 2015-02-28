@@ -7521,3 +7521,1253 @@ java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.t
   Class:     org.testng.remote.RemoteTestNG
   Args:      -serport 28474 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1415568171\testng-customsuite.xml
 java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 28474 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1415568171\testng-customsuite.xml
+
+!ENTRY org.eclipse.jdt.ui 4 2 2015-02-27 14:17:58.003
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.NullPointerException
+	at org.testng.eclipse.ui.TestNGQuickFixProcessor.isAnnotation(TestNGQuickFixProcessor.java:108)
+	at org.testng.eclipse.ui.TestNGQuickFixProcessor.getAddTestNGToBuildPathProposals(TestNGQuickFixProcessor.java:79)
+	at org.testng.eclipse.ui.TestNGQuickFixProcessor.getCorrections(TestNGQuickFixProcessor.java:35)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionCollector.safeRun(JavaCorrectionProcessor.java:378)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:339)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:335)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectCorrections(JavaCorrectionProcessor.java:468)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:280)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.computeQuickAssistProposals(JavaCorrectionProcessor.java:242)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant$ContentAssistProcessor.computeCompletionProposals(QuickAssistAssistant.java:75)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1861)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1687)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant.showPossibleQuickAssists(QuickAssistAssistant.java:128)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionAssistant.showPossibleQuickAssists(JavaCorrectionAssistant.java:193)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:195)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:126)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.wmKeyDown(Widget.java:1831)
+	at org.eclipse.swt.widgets.Control.WM_KEYDOWN(Control.java:4975)
+	at org.eclipse.swt.widgets.Canvas.WM_KEYDOWN(Canvas.java:428)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4642)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2015-02-27 14:17:58.115
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.NullPointerException
+	at org.testng.eclipse.refactoring.TestNGVisitor.visit(TestNGVisitor.java:49)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:611)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:2782)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:470)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:2782)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:212)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.testng.eclipse.refactoring.TestNGQuickAssistProcessor.init(TestNGQuickAssistProcessor.java:65)
+	at org.testng.eclipse.refactoring.TestNGQuickAssistProcessor.getAssists(TestNGQuickAssistProcessor.java:81)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeAssistCollector.safeRun(JavaCorrectionProcessor.java:403)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:339)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:329)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectAssists(JavaCorrectionProcessor.java:509)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:287)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.computeQuickAssistProposals(JavaCorrectionProcessor.java:242)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant$ContentAssistProcessor.computeCompletionProposals(QuickAssistAssistant.java:75)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1861)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1687)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant.showPossibleQuickAssists(QuickAssistAssistant.java:128)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionAssistant.showPossibleQuickAssists(JavaCorrectionAssistant.java:193)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:195)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:126)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.wmKeyDown(Widget.java:1831)
+	at org.eclipse.swt.widgets.Control.WM_KEYDOWN(Control.java:4975)
+	at org.eclipse.swt.widgets.Canvas.WM_KEYDOWN(Canvas.java:428)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4642)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.jdt.ui 4 4 2015-02-27 14:17:58.118
+!MESSAGE An error occurred while computing quick fixes. Check log for details.
+!SUBENTRY 1 org.eclipse.jdt.ui 4 0 2015-02-27 14:17:58.118
+!MESSAGE Exception while processing quick fixes or quick assists
+!SUBENTRY 2 org.eclipse.jdt.ui 4 4 2015-02-27 14:17:58.118
+!MESSAGE Exception while processing quick fixes or quick assists
+!STACK 0
+java.lang.NullPointerException
+	at org.testng.eclipse.ui.TestNGQuickFixProcessor.isAnnotation(TestNGQuickFixProcessor.java:108)
+	at org.testng.eclipse.ui.TestNGQuickFixProcessor.getAddTestNGToBuildPathProposals(TestNGQuickFixProcessor.java:79)
+	at org.testng.eclipse.ui.TestNGQuickFixProcessor.getCorrections(TestNGQuickFixProcessor.java:35)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionCollector.safeRun(JavaCorrectionProcessor.java:378)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:339)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:335)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectCorrections(JavaCorrectionProcessor.java:468)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:280)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.computeQuickAssistProposals(JavaCorrectionProcessor.java:242)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant$ContentAssistProcessor.computeCompletionProposals(QuickAssistAssistant.java:75)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1861)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1687)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant.showPossibleQuickAssists(QuickAssistAssistant.java:128)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionAssistant.showPossibleQuickAssists(JavaCorrectionAssistant.java:193)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:195)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:126)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.wmKeyDown(Widget.java:1831)
+	at org.eclipse.swt.widgets.Control.WM_KEYDOWN(Control.java:4975)
+	at org.eclipse.swt.widgets.Canvas.WM_KEYDOWN(Canvas.java:428)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4642)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SUBENTRY 1 org.eclipse.jdt.ui 4 0 2015-02-27 14:17:58.118
+!MESSAGE Exception while processing quick fixes or quick assists
+!SUBENTRY 2 org.eclipse.jdt.ui 4 4 2015-02-27 14:17:58.118
+!MESSAGE Exception while processing quick fixes or quick assists
+!STACK 0
+java.lang.NullPointerException
+	at org.testng.eclipse.refactoring.TestNGVisitor.visit(TestNGVisitor.java:49)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:611)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:2782)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:470)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:2782)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:212)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.testng.eclipse.refactoring.TestNGQuickAssistProcessor.init(TestNGQuickAssistProcessor.java:65)
+	at org.testng.eclipse.refactoring.TestNGQuickAssistProcessor.getAssists(TestNGQuickAssistProcessor.java:81)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeAssistCollector.safeRun(JavaCorrectionProcessor.java:403)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:339)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:329)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectAssists(JavaCorrectionProcessor.java:509)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:287)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.computeQuickAssistProposals(JavaCorrectionProcessor.java:242)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant$ContentAssistProcessor.computeCompletionProposals(QuickAssistAssistant.java:75)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1861)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1687)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant.showPossibleQuickAssists(QuickAssistAssistant.java:128)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionAssistant.showPossibleQuickAssists(JavaCorrectionAssistant.java:193)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:195)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:126)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.wmKeyDown(Widget.java:1831)
+	at org.eclipse.swt.widgets.Control.WM_KEYDOWN(Control.java:4975)
+	at org.eclipse.swt.widgets.Canvas.WM_KEYDOWN(Canvas.java:428)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4642)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2015-02-27 14:18:01.182
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.NullPointerException
+	at org.testng.eclipse.ui.TestNGQuickFixProcessor.isAnnotation(TestNGQuickFixProcessor.java:108)
+	at org.testng.eclipse.ui.TestNGQuickFixProcessor.getAddTestNGToBuildPathProposals(TestNGQuickFixProcessor.java:79)
+	at org.testng.eclipse.ui.TestNGQuickFixProcessor.getCorrections(TestNGQuickFixProcessor.java:35)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionCollector.safeRun(JavaCorrectionProcessor.java:378)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:339)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:335)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectCorrections(JavaCorrectionProcessor.java:468)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:280)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.computeQuickAssistProposals(JavaCorrectionProcessor.java:242)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant$ContentAssistProcessor.computeCompletionProposals(QuickAssistAssistant.java:75)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1861)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1687)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant.showPossibleQuickAssists(QuickAssistAssistant.java:128)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionAssistant.showPossibleQuickAssists(JavaCorrectionAssistant.java:193)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:195)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:126)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.wmKeyDown(Widget.java:1831)
+	at org.eclipse.swt.widgets.Control.WM_KEYDOWN(Control.java:4975)
+	at org.eclipse.swt.widgets.Canvas.WM_KEYDOWN(Canvas.java:428)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4642)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2015-02-27 14:18:01.228
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.NullPointerException
+	at org.testng.eclipse.refactoring.TestNGVisitor.visit(TestNGVisitor.java:49)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:611)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:2782)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:470)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:2782)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:212)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.testng.eclipse.refactoring.TestNGQuickAssistProcessor.init(TestNGQuickAssistProcessor.java:65)
+	at org.testng.eclipse.refactoring.TestNGQuickAssistProcessor.getAssists(TestNGQuickAssistProcessor.java:81)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeAssistCollector.safeRun(JavaCorrectionProcessor.java:403)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:339)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:329)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectAssists(JavaCorrectionProcessor.java:509)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:287)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.computeQuickAssistProposals(JavaCorrectionProcessor.java:242)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant$ContentAssistProcessor.computeCompletionProposals(QuickAssistAssistant.java:75)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1861)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1687)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant.showPossibleQuickAssists(QuickAssistAssistant.java:128)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionAssistant.showPossibleQuickAssists(JavaCorrectionAssistant.java:193)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:195)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:126)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.wmKeyDown(Widget.java:1831)
+	at org.eclipse.swt.widgets.Control.WM_KEYDOWN(Control.java:4975)
+	at org.eclipse.swt.widgets.Canvas.WM_KEYDOWN(Canvas.java:428)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4642)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.jdt.ui 4 4 2015-02-27 14:18:01.230
+!MESSAGE An error occurred while computing quick fixes. Check log for details.
+!SUBENTRY 1 org.eclipse.jdt.ui 4 0 2015-02-27 14:18:01.230
+!MESSAGE Exception while processing quick fixes or quick assists
+!SUBENTRY 2 org.eclipse.jdt.ui 4 4 2015-02-27 14:18:01.230
+!MESSAGE Exception while processing quick fixes or quick assists
+!STACK 0
+java.lang.NullPointerException
+	at org.testng.eclipse.ui.TestNGQuickFixProcessor.isAnnotation(TestNGQuickFixProcessor.java:108)
+	at org.testng.eclipse.ui.TestNGQuickFixProcessor.getAddTestNGToBuildPathProposals(TestNGQuickFixProcessor.java:79)
+	at org.testng.eclipse.ui.TestNGQuickFixProcessor.getCorrections(TestNGQuickFixProcessor.java:35)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionCollector.safeRun(JavaCorrectionProcessor.java:378)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:339)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:335)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectCorrections(JavaCorrectionProcessor.java:468)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:280)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.computeQuickAssistProposals(JavaCorrectionProcessor.java:242)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant$ContentAssistProcessor.computeCompletionProposals(QuickAssistAssistant.java:75)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1861)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1687)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant.showPossibleQuickAssists(QuickAssistAssistant.java:128)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionAssistant.showPossibleQuickAssists(JavaCorrectionAssistant.java:193)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:195)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:126)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.wmKeyDown(Widget.java:1831)
+	at org.eclipse.swt.widgets.Control.WM_KEYDOWN(Control.java:4975)
+	at org.eclipse.swt.widgets.Canvas.WM_KEYDOWN(Canvas.java:428)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4642)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SUBENTRY 1 org.eclipse.jdt.ui 4 0 2015-02-27 14:18:01.230
+!MESSAGE Exception while processing quick fixes or quick assists
+!SUBENTRY 2 org.eclipse.jdt.ui 4 4 2015-02-27 14:18:01.230
+!MESSAGE Exception while processing quick fixes or quick assists
+!STACK 0
+java.lang.NullPointerException
+	at org.testng.eclipse.refactoring.TestNGVisitor.visit(TestNGVisitor.java:49)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:611)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:2782)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:470)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:2782)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:212)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.testng.eclipse.refactoring.TestNGQuickAssistProcessor.init(TestNGQuickAssistProcessor.java:65)
+	at org.testng.eclipse.refactoring.TestNGQuickAssistProcessor.getAssists(TestNGQuickAssistProcessor.java:81)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeAssistCollector.safeRun(JavaCorrectionProcessor.java:403)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:339)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:329)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectAssists(JavaCorrectionProcessor.java:509)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:287)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.computeQuickAssistProposals(JavaCorrectionProcessor.java:242)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant$ContentAssistProcessor.computeCompletionProposals(QuickAssistAssistant.java:75)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1861)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1687)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant.showPossibleQuickAssists(QuickAssistAssistant.java:128)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionAssistant.showPossibleQuickAssists(JavaCorrectionAssistant.java:193)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:195)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:126)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.wmKeyDown(Widget.java:1831)
+	at org.eclipse.swt.widgets.Control.WM_KEYDOWN(Control.java:4975)
+	at org.eclipse.swt.widgets.Canvas.WM_KEYDOWN(Canvas.java:428)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4642)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 14:18:06.459
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 14:18:08.670
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 29085 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--230699850\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 29085 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--230699850\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 14:26:52.410
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 14:26:52.596
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 29189 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-86961829\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 29189 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-86961829\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 14:30:29.755
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 14:30:29.986
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 29234 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1001571074\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 29234 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1001571074\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 14:35:57.901
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 14:35:58.106
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 29360 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-2069770481\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 29360 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-2069770481\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 18:07:14.696
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 18:07:14.982
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 31014 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-21262686\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 31014 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-21262686\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 18:09:12.054
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 18:09:12.338
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 31043 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1351491231\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 31043 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1351491231\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 18:57:28.330
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 18:57:28.419
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 31252 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1776957284\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 31252 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1776957284\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 18:59:35.123
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 18:59:35.478
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 31297 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--842212369\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 31297 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--842212369\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 19:01:45.961
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 19:01:46.321
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 31355 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1536532536\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 31355 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1536532536\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 19:01:55.047
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 19:01:55.403
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 31357 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--832811474\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 31357 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--832811474\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 19:03:46.829
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 19:03:47.193
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 31419 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1723245680\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 31419 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1723245680\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 19:07:33.994
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 19:07:34.446
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 31535 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-926618640\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 31535 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-926618640\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 19:09:56.816
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 19:09:57.123
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 31735 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-158258118\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 31735 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-158258118\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 19:11:10.558
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 19:11:10.878
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 31789 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-751079552\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 31789 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-751079552\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 20:02:03.972
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 20:02:04.442
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 32296 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1658037460\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 32296 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1658037460\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 20:03:49.219
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 20:03:49.569
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 32381 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1146585222\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 32381 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1146585222\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 20:16:05.815
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 20:16:06.209
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 32507 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1074023687\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 32507 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1074023687\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 20:22:57.900
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 20:22:58.292
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 32737 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-125053100\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 32737 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-125053100\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 20:30:25.176
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-27 20:30:25.496
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 32887 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1984113011\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 32887 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse--1984113011\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-02-28 16:35:34.744
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] SignupTest.java [in com.example.tests [in src [in mantis-tests]]]
+  package com.example.tests
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import com.example.fw.User
+  import org.hamcrest.Matchers.*
+  import org.junit.Assert.*
+  class SignupTest
+    User user
+    void createMailUser()
+    void newUserShouldSignup()
+    void existedUserShouldNotSignup()
+    void deleteMailUser()
+
+!ENTRY org.testng.eclipse 1 0 2015-02-28 16:35:34.884
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin C:\selenium-server-standalone-2.44.0.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar C:\javamail1_4_7\javamail-1.4.7\mail.jar C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 34356 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1710847841\testng-customsuite.xml
+java -ea -classpath /C:/eclipse-java-luna-SR1-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar:E:\Inna\TrainingJava\dev_java_test\mantis-tests\bin:C:\selenium-server-standalone-2.44.0.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\antlr-2.7.7.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\dom4j-1.6.1.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-commons-annotations-4.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-core-4.1.9.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\hibernate-jpa-2.0-api-1.0.1.Final.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\javassist-3.17.1-GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-logging-3.1.0.GA.jar:C:\hibernate-release-4.1.9.Final\hibernate-release-4.1.9.Final\lib\required\jboss-transaction-api_1.1_spec-1.0.0.Final.jar:C:\wamp\bin\mysql\mysql-connector-java-5.1.34\mysql-connector-java-5.1.34-bin.jar:C:\javamail1_4_7\javamail-1.4.7\mail.jar:C:\javamail1_4_7\javamail-1.4.7\lib\pop3.jar:C:\commons-net-3.3-bin\commons-net-3.3\commons-net-3.3.jar org.testng.remote.RemoteTestNG -serport 34356 -d E:\Inna\TrainingJava\dev_java_test\mantis-tests\test-output C:\Users\Saviour\AppData\Local\Temp\testng-eclipse-1710847841\testng-customsuite.xml
